@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Final internally consistent serial train-eval-policy-zoo runs using unique mediafinal tags.}
+\label{tab:mediafinal_consistent_results}
+\begin{tabular}{llllllllllllllllll}
+\toprule
+run & host\_dice & best\_fixed\_action & best\_fixed\_gain & best\_fixed\_harm & best\_fixed\_worst\_drop & crc\_gain & crc\_harm & crc\_worst\_drop & crc\_revert\_rate & crc\_action & zoo\_crc\_gain & zoo\_crc\_harm & zoo\_crc\_worst\_drop & zoo\_crc\_revert\_rate & zoo\_crc\_action & strict\_exact\_fallback & zoo\_strict\_exact\_fallback \\
+\midrule
+isic2018\_task1\_mediafinal\_unet\_e120 & 0.861 & binary\_morph:a11.00 & +0.0026 & 0.0034 & -0.5228 & +0.0000 & 0.0000 & -0.0013 & 0.948 & isic2018\_task1\_mediafinal\_unet\_e120:binary\_morph:a11.00 & +0.0033 & 0.0015 & -0.1519 & 0.032 & isic2018\_task1\_mediafinal\_unet\_e120\_zoo:largest\_cc:a0.00 & yes & yes \\
+kvasir\_seg\_mediafinal\_graphseg\_e120 & 0.488 & binary\_morph:a9.00 & +0.0073 & 0.0424 & -0.4294 & +0.0095 & 0.0016 & -0.0919 & 0.707 & kvasir\_seg\_mediafinal\_graphseg\_e120:binary\_morph:a5.00 & +0.0000 & 0.0000 & +0.0000 & 1.000 & host & yes & yes \\
+kvasir\_seg\_mediafinal\_unet\_e120 & 0.841 & binary\_morph:a11.00 & +0.0078 & 0.0082 & -0.3400 & +0.0000 & 0.0000 & +0.0000 & 0.907 & kvasir\_seg\_mediafinal\_unet\_e120:binary\_morph:a11.00 & +0.0000 & 0.0000 & +0.0000 & 1.000 & host & yes & yes \\
+ph2\_mediafinal\_unet\_e120 & 0.908 & binary\_morph:a7.00 & +0.0053 & 0.0000 & -0.0087 & +0.0000 & 0.0000 & +0.0000 & 1.000 & host & +0.0000 & 0.0000 & +0.0000 & 1.000 & host & yes & yes \\
+polyps\_official\_mediafinal\_graphseg\_e120 & 0.256 & binary\_morph:a11.00 & -0.0211 & 0.0524 & -0.5093 & +0.0000 & 0.0000 & +0.0000 & 1.000 & host & +0.0026 & 0.0000 & -0.0455 & 0.717 & polyps\_official\_mediafinal\_graphseg\_e120\_zoo:close\_only:a11.00 & yes & yes \\
+polyps\_official\_mediafinal\_unet\_e120 & 0.565 & binary\_morph:a9.00 & -0.0017 & 0.0267 & -0.6043 & +0.0037 & 0.0018 & -0.2642 & 0.466 & polyps\_official\_mediafinal\_unet\_e120:binary\_morph:a9.00 & +0.0037 & 0.0018 & -0.2642 & 0.466 & polyps\_official\_mediafinal\_unet\_e120\_zoo:binary\_morph:a9.00 & yes & yes \\
+\bottomrule
+\end{tabular}
+\end{table*}

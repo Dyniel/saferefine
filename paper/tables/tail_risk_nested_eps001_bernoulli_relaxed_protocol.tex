@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Nested relaxed SafeRefine protocol with $\epsilon=0.01$ and positive calibration-utility fallback.}
+\label{tab:tail_risk_nested_eps001_bernoulli_relaxed}
+\begin{tabular}{llllllllllll}
+\toprule
+setting & variant & risk\_score & action & gain & harm & harmed\_rate & drop\_gt\_0.05 & worst\_drop & revert\_rate & oracle\_gain & oracle\_recovery \\
+\midrule
+ISIC / UNet & nested\_eps001\_bernoulli & geom & isic2018\_task1\_mediafinal\_unet\_e120\_zoo:prob\_gaussian\_lcc:a2.00 & +0.0017 & 0.0007 & 0.006 & 0.004 & -0.1529 & 0.266 & +0.0114 & 0.146 \\
+Kvasir / GraphSeg & nested\_eps001\_bernoulli & geom & kvasir\_seg\_mediafinal\_graphseg\_e120\_zoo:binary\_morph:a11.00 & +0.0013 & 0.0235 & 0.108 & 0.108 & -0.5852 & 0.378 & +0.0806 & 0.016 \\
+Kvasir / UNet & nested\_eps001\_bernoulli & changed & kvasir\_seg\_mediafinal\_unet\_e120\_zoo:binary\_morph:a3.00 & +0.0081 & 0.0017 & 0.041 & 0.014 & -0.0878 & 0.095 & +0.0214 & 0.378 \\
+MSD Heart MRI / GraphSeg & nested\_eps001\_bernoulli & host\_uncertainty & msd\_heart\_mri\_mediafinal\_graphseg\_mri\_e120\_zoo:largest\_cc:a0.00 & -0.0004 & 0.0004 & 0.016 & 0.000 & -0.0259 & 0.984 & +0.1237 & -0.003 \\
+MSD Heart MRI / UNet & nested\_eps001\_bernoulli & changed & msd\_heart\_mri\_mediafinal\_unet\_mri\_e120\_zoo:close\_only:a9.00 & +0.0000 & 0.0001 & 0.000 & 0.000 & -0.0033 & 0.339 & +0.0484 & 0.001 \\
+PH2 / UNet & nested\_eps001\_bernoulli & change\_plus\_geom & ph2\_mediafinal\_unet\_e120\_zoo:largest\_cc:a0.00 & +0.0001 & 0.0000 & 0.000 & 0.000 & -0.0006 & 0.429 & +0.0146 & 0.008 \\
+Polyp ext. / GraphSeg & nested\_eps001\_bernoulli & changed & polyps\_official\_mediafinal\_graphseg\_e120\_zoo:close\_only:a11.00 & +0.0064 & 0.0027 & 0.103 & 0.003 & -0.0633 & 0.241 & +0.0595 & 0.108 \\
+Polyp ext. / UNet & nested\_eps001\_bernoulli & change\_plus\_geom & polyps\_official\_mediafinal\_unet\_e120\_zoo:binary\_morph:a11.00 & -0.0023 & 0.0164 & 0.101 & 0.063 & -0.6043 & 0.141 & +0.0282 & -0.081 \\
+\bottomrule
+\end{tabular}
+\end{table*}

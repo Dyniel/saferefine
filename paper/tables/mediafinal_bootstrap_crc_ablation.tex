@@ -1,0 +1,84 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Bootstrap confidence intervals for the final internally consistent mediafinal runs.}
+\label{tab:mediafinal_bootstrap_crc_ablation}
+\begin{tabular}{lllllllll}
+\toprule
+dataset & mode & risk & gain\_CI & harm\_CI & worst\_drop\_CI & harmed\_rate\_CI & revert\_rate\_CI & action \\
+\midrule
+isic2018\_task1\_mediafinal\_unet\_e120 & practical & change\_plus\_geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.016 [0.006, 0.028] & 0.950 [0.932, 0.968] & isic2018\_task1\_mediafinal\_unet\_e120:binary\_morph:a5.00 \\
+isic2018\_task1\_mediafinal\_unet\_e120 & practical & changed & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & -0.0013 [-0.0013, +0.0000] & 0.022 [0.010, 0.036] & 0.948 [0.928, 0.968] & isic2018\_task1\_mediafinal\_unet\_e120:binary\_morph:a11.00 \\
+isic2018\_task1\_mediafinal\_unet\_e120 & practical & geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.020 [0.008, 0.034] & 0.938 [0.918, 0.958] & isic2018\_task1\_mediafinal\_unet\_e120:binary\_morph:a5.00 \\
+isic2018\_task1\_mediafinal\_unet\_e120 & strict & change\_plus\_geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+isic2018\_task1\_mediafinal\_unet\_e120 & strict & changed & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+isic2018\_task1\_mediafinal\_unet\_e120 & strict & geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+isic2018\_task1\_mediafinal\_unet\_e120\_zoo & practical & change\_plus\_geom & +0.0030 [+0.0013, +0.0049] & 0.0009 [0.0000, 0.0018] & -0.1519 [-0.1519, -0.0322] & 0.158 [0.126, 0.190] & 0.148 [0.118, 0.180] & isic2018\_task1\_mediafinal\_unet\_e120\_zoo:largest\_cc:a0.00 \\
+isic2018\_task1\_mediafinal\_unet\_e120\_zoo & practical & changed & +0.0033 [+0.0015, +0.0055] & 0.0015 [0.0008, 0.0024] & -0.1519 [-0.1519, -0.0609] & 0.218 [0.182, 0.256] & 0.032 [0.018, 0.048] & isic2018\_task1\_mediafinal\_unet\_e120\_zoo:largest\_cc:a0.00 \\
+isic2018\_task1\_mediafinal\_unet\_e120\_zoo & practical & geom & +0.0030 [+0.0013, +0.0049] & 0.0009 [0.0000, 0.0018] & -0.1519 [-0.1519, -0.0322] & 0.158 [0.126, 0.190] & 0.152 [0.122, 0.184] & isic2018\_task1\_mediafinal\_unet\_e120\_zoo:largest\_cc:a0.00 \\
+isic2018\_task1\_mediafinal\_unet\_e120\_zoo & strict & change\_plus\_geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+isic2018\_task1\_mediafinal\_unet\_e120\_zoo & strict & changed & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+isic2018\_task1\_mediafinal\_unet\_e120\_zoo & strict & geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+kvasir\_seg\_mediafinal\_graphseg\_e120 & practical & change\_plus\_geom & +0.0018 [-0.0016, +0.0050] & 0.0016 [0.0000, 0.0044] & -0.0919 [-0.0919, +0.0000] & 0.040 [0.000, 0.093] & 0.733 [0.627, 0.840] & kvasir\_seg\_mediafinal\_graphseg\_e120:binary\_morph:a5.00 \\
+kvasir\_seg\_mediafinal\_graphseg\_e120 & practical & changed & +0.0007 [+0.0000, +0.0017] & 0.0000 [0.0000, 0.0000] & -0.0047 [-0.0047, +0.0000] & 0.027 [0.000, 0.067] & 0.907 [0.840, 0.973] & kvasir\_seg\_mediafinal\_graphseg\_e120:binary\_morph:a11.00 \\
+kvasir\_seg\_mediafinal\_graphseg\_e120 & practical & geom & +0.0095 [+0.0000, +0.0227] & 0.0016 [0.0000, 0.0044] & -0.0919 [-0.0919, +0.0000] & 0.040 [0.000, 0.093] & 0.707 [0.600, 0.813] & kvasir\_seg\_mediafinal\_graphseg\_e120:binary\_morph:a5.00 \\
+kvasir\_seg\_mediafinal\_graphseg\_e120 & strict & change\_plus\_geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+kvasir\_seg\_mediafinal\_graphseg\_e120 & strict & changed & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+kvasir\_seg\_mediafinal\_graphseg\_e120 & strict & geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+kvasir\_seg\_mediafinal\_graphseg\_e120\_zoo & practical & change\_plus\_geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+kvasir\_seg\_mediafinal\_graphseg\_e120\_zoo & practical & changed & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+kvasir\_seg\_mediafinal\_graphseg\_e120\_zoo & practical & geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+kvasir\_seg\_mediafinal\_graphseg\_e120\_zoo & strict & change\_plus\_geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+kvasir\_seg\_mediafinal\_graphseg\_e120\_zoo & strict & changed & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+kvasir\_seg\_mediafinal\_graphseg\_e120\_zoo & strict & geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+kvasir\_seg\_mediafinal\_unet\_e120 & practical & change\_plus\_geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.040 [0.000, 0.093] & 0.907 [0.840, 0.973] & kvasir\_seg\_mediafinal\_unet\_e120:binary\_morph:a11.00 \\
+kvasir\_seg\_mediafinal\_unet\_e120 & practical & changed & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & -0.0006 [-0.0006, +0.0000] & 0.040 [0.000, 0.093] & 0.920 [0.853, 0.973] & kvasir\_seg\_mediafinal\_unet\_e120:binary\_morph:a7.00 \\
+kvasir\_seg\_mediafinal\_unet\_e120 & practical & geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.040 [0.000, 0.093] & 0.907 [0.840, 0.973] & kvasir\_seg\_mediafinal\_unet\_e120:binary\_morph:a11.00 \\
+kvasir\_seg\_mediafinal\_unet\_e120 & strict & change\_plus\_geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+kvasir\_seg\_mediafinal\_unet\_e120 & strict & changed & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+kvasir\_seg\_mediafinal\_unet\_e120 & strict & geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+kvasir\_seg\_mediafinal\_unet\_e120\_zoo & practical & change\_plus\_geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+kvasir\_seg\_mediafinal\_unet\_e120\_zoo & practical & changed & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+kvasir\_seg\_mediafinal\_unet\_e120\_zoo & practical & geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+kvasir\_seg\_mediafinal\_unet\_e120\_zoo & strict & change\_plus\_geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+kvasir\_seg\_mediafinal\_unet\_e120\_zoo & strict & changed & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+kvasir\_seg\_mediafinal\_unet\_e120\_zoo & strict & geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+ph2\_mediafinal\_unet\_e120 & practical & change\_plus\_geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+ph2\_mediafinal\_unet\_e120 & practical & changed & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+ph2\_mediafinal\_unet\_e120 & practical & geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+ph2\_mediafinal\_unet\_e120 & strict & change\_plus\_geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+ph2\_mediafinal\_unet\_e120 & strict & changed & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+ph2\_mediafinal\_unet\_e120 & strict & geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+ph2\_mediafinal\_unet\_e120\_zoo & practical & change\_plus\_geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+ph2\_mediafinal\_unet\_e120\_zoo & practical & changed & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+ph2\_mediafinal\_unet\_e120\_zoo & practical & geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+ph2\_mediafinal\_unet\_e120\_zoo & strict & change\_plus\_geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+ph2\_mediafinal\_unet\_e120\_zoo & strict & changed & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+ph2\_mediafinal\_unet\_e120\_zoo & strict & geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+polyps\_official\_mediafinal\_graphseg\_e120 & practical & change\_plus\_geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & -0.0187 [-0.0187, +0.0000] & 0.003 [0.000, 0.008] & 0.980 [0.965, 0.992] & polyps\_official\_mediafinal\_graphseg\_e120:binary\_morph:a11.00 \\
+polyps\_official\_mediafinal\_graphseg\_e120 & practical & changed & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+polyps\_official\_mediafinal\_graphseg\_e120 & practical & geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & -0.0187 [-0.0187, +0.0000] & 0.003 [0.000, 0.008] & 0.980 [0.965, 0.992] & polyps\_official\_mediafinal\_graphseg\_e120:binary\_morph:a11.00 \\
+polyps\_official\_mediafinal\_graphseg\_e120 & strict & change\_plus\_geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+polyps\_official\_mediafinal\_graphseg\_e120 & strict & changed & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+polyps\_official\_mediafinal\_graphseg\_e120 & strict & geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+polyps\_official\_mediafinal\_graphseg\_e120\_zoo & practical & change\_plus\_geom & +0.0013 [+0.0007, +0.0021] & 0.0000 [0.0000, 0.0000] & -0.0196 [-0.0196, -0.0011] & 0.113 [0.083, 0.145] & 0.810 [0.769, 0.847] & polyps\_official\_mediafinal\_graphseg\_e120\_zoo:close\_only:a11.00 \\
+polyps\_official\_mediafinal\_graphseg\_e120\_zoo & practical & changed & +0.0026 [+0.0014, +0.0040] & 0.0000 [0.0000, 0.0007] & -0.0455 [-0.0455, -0.0196] & 0.148 [0.113, 0.185] & 0.717 [0.672, 0.762] & polyps\_official\_mediafinal\_graphseg\_e120\_zoo:close\_only:a11.00 \\
+polyps\_official\_mediafinal\_graphseg\_e120\_zoo & practical & geom & +0.0015 [+0.0007, +0.0023] & 0.0000 [0.0000, 0.0000] & -0.0250 [-0.0250, -0.0052] & 0.123 [0.090, 0.158] & 0.779 [0.739, 0.820] & polyps\_official\_mediafinal\_graphseg\_e120\_zoo:close\_only:a11.00 \\
+polyps\_official\_mediafinal\_graphseg\_e120\_zoo & strict & change\_plus\_geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+polyps\_official\_mediafinal\_graphseg\_e120\_zoo & strict & changed & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+polyps\_official\_mediafinal\_graphseg\_e120\_zoo & strict & geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+polyps\_official\_mediafinal\_unet\_e120 & practical & change\_plus\_geom & +0.0028 [+0.0000, +0.0058] & 0.0021 [0.0007, 0.0040] & -0.2642 [-0.2642, -0.0534] & 0.125 [0.093, 0.160] & 0.464 [0.414, 0.514] & polyps\_official\_mediafinal\_unet\_e120:binary\_morph:a9.00 \\
+polyps\_official\_mediafinal\_unet\_e120 & practical & changed & +0.0009 [-0.0007, +0.0024] & 0.0017 [0.0008, 0.0029] & -0.1564 [-0.1564, -0.0508] & 0.125 [0.093, 0.160] & 0.456 [0.409, 0.504] & polyps\_official\_mediafinal\_unet\_e120:binary\_morph:a9.00 \\
+polyps\_official\_mediafinal\_unet\_e120 & practical & geom & +0.0037 [+0.0009, +0.0066] & 0.0018 [0.0005, 0.0036] & -0.2642 [-0.2642, -0.0508] & 0.120 [0.090, 0.155] & 0.466 [0.416, 0.516] & polyps\_official\_mediafinal\_unet\_e120:binary\_morph:a9.00 \\
+polyps\_official\_mediafinal\_unet\_e120 & strict & change\_plus\_geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+polyps\_official\_mediafinal\_unet\_e120 & strict & changed & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+polyps\_official\_mediafinal\_unet\_e120 & strict & geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+polyps\_official\_mediafinal\_unet\_e120\_zoo & practical & change\_plus\_geom & +0.0024 [+0.0000, +0.0054] & 0.0021 [0.0007, 0.0039] & -0.2642 [-0.2642, -0.0534] & 0.125 [0.093, 0.158] & 0.469 [0.419, 0.519] & polyps\_official\_mediafinal\_unet\_e120\_zoo:binary\_morph:a9.00 \\
+polyps\_official\_mediafinal\_unet\_e120\_zoo & practical & changed & +0.0009 [-0.0007, +0.0024] & 0.0017 [0.0008, 0.0029] & -0.1564 [-0.1564, -0.0508] & 0.125 [0.095, 0.160] & 0.456 [0.404, 0.506] & polyps\_official\_mediafinal\_unet\_e120\_zoo:binary\_morph:a9.00 \\
+polyps\_official\_mediafinal\_unet\_e120\_zoo & practical & geom & +0.0037 [+0.0008, +0.0067] & 0.0018 [0.0005, 0.0035] & -0.2642 [-0.2642, -0.0508] & 0.120 [0.090, 0.153] & 0.466 [0.419, 0.514] & polyps\_official\_mediafinal\_unet\_e120\_zoo:binary\_morph:a9.00 \\
+polyps\_official\_mediafinal\_unet\_e120\_zoo & strict & change\_plus\_geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+polyps\_official\_mediafinal\_unet\_e120\_zoo & strict & changed & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+polyps\_official\_mediafinal\_unet\_e120\_zoo & strict & geom & +0.0000 [+0.0000, +0.0000] & 0.0000 [0.0000, 0.0000] & +0.0000 [+0.0000, +0.0000] & 0.000 [0.000, 0.000] & 1.000 [1.000, 1.000] & host \\
+\bottomrule
+\end{tabular}
+\end{table*}

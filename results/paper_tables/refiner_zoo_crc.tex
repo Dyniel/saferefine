@@ -1,0 +1,108 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Safe action-selection results over a broader post-processing/refinement candidate zoo.}
+\label{tab:refiner_zoo_crc}
+\begin{tabular}{lllllllll}
+\toprule
+run & mode & risk & gain & harm & worst\_drop & harmed\_rate & revert\_rate & selected\_action \\
+\midrule
+isic2018\_task1\_isic\_graphseg\_phase0 & practical & change\_plus\_geom & +0.0108 & 0.0059 & -0.3385 & 0.164 & 0.158 & isic2018\_task1\_isic\_graphseg\_phase0\_zoo:binary\_morph:a9.00 \\
+isic2018\_task1\_isic\_graphseg\_phase0 & practical & changed & +0.0093 & 0.0093 & -0.3385 & 0.200 & 0.096 & isic2018\_task1\_isic\_graphseg\_phase0\_zoo:binary\_morph:a9.00 \\
+isic2018\_task1\_isic\_graphseg\_phase0 & practical & geom & +0.0117 & 0.0040 & -0.2927 & 0.170 & 0.212 & isic2018\_task1\_isic\_graphseg\_phase0\_zoo:binary\_morph:a11.00 \\
+isic2018\_task1\_isic\_graphseg\_phase0 & strict & change\_plus\_geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+isic2018\_task1\_isic\_graphseg\_phase0 & strict & changed & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+isic2018\_task1\_isic\_graphseg\_phase0 & strict & geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+isic2018\_task1\_mediafinal\_unet\_e120 & practical & change\_plus\_geom & +0.0030 & 0.0009 & -0.1519 & 0.158 & 0.148 & isic2018\_task1\_mediafinal\_unet\_e120\_zoo:largest\_cc:a0.00 \\
+isic2018\_task1\_mediafinal\_unet\_e120 & practical & changed & +0.0033 & 0.0015 & -0.1519 & 0.218 & 0.032 & isic2018\_task1\_mediafinal\_unet\_e120\_zoo:largest\_cc:a0.00 \\
+isic2018\_task1\_mediafinal\_unet\_e120 & practical & geom & +0.0030 & 0.0009 & -0.1519 & 0.158 & 0.152 & isic2018\_task1\_mediafinal\_unet\_e120\_zoo:largest\_cc:a0.00 \\
+isic2018\_task1\_mediafinal\_unet\_e120 & strict & change\_plus\_geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+isic2018\_task1\_mediafinal\_unet\_e120 & strict & changed & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+isic2018\_task1\_mediafinal\_unet\_e120 & strict & geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_seg\_kvasir\_graphseg\_e120 & practical & change\_plus\_geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_seg\_kvasir\_graphseg\_e120 & practical & changed & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_seg\_kvasir\_graphseg\_e120 & practical & geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_seg\_kvasir\_graphseg\_e120 & strict & change\_plus\_geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_seg\_kvasir\_graphseg\_e120 & strict & changed & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_seg\_kvasir\_graphseg\_e120 & strict & geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_seg\_kvasir\_unet\_e120 & practical & change\_plus\_geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_seg\_kvasir\_unet\_e120 & practical & changed & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_seg\_kvasir\_unet\_e120 & practical & geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_seg\_kvasir\_unet\_e120 & strict & change\_plus\_geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_seg\_kvasir\_unet\_e120 & strict & changed & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_seg\_kvasir\_unet\_e120 & strict & geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_seg\_mediafinal\_graphseg\_e120 & practical & change\_plus\_geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_seg\_mediafinal\_graphseg\_e120 & practical & changed & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_seg\_mediafinal\_graphseg\_e120 & practical & geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_seg\_mediafinal\_graphseg\_e120 & strict & change\_plus\_geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_seg\_mediafinal\_graphseg\_e120 & strict & changed & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_seg\_mediafinal\_graphseg\_e120 & strict & geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_seg\_mediafinal\_unet\_e120 & practical & change\_plus\_geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_seg\_mediafinal\_unet\_e120 & practical & changed & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_seg\_mediafinal\_unet\_e120 & practical & geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_seg\_mediafinal\_unet\_e120 & strict & change\_plus\_geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_seg\_mediafinal\_unet\_e120 & strict & changed & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_seg\_mediafinal\_unet\_e120 & strict & geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_sessile\_sessile\_graphseg\_e120 & practical & change\_plus\_geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_sessile\_sessile\_graphseg\_e120 & practical & changed & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_sessile\_sessile\_graphseg\_e120 & practical & geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_sessile\_sessile\_graphseg\_e120 & strict & change\_plus\_geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_sessile\_sessile\_graphseg\_e120 & strict & changed & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_sessile\_sessile\_graphseg\_e120 & strict & geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_sessile\_sessile\_unet\_e120 & practical & change\_plus\_geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_sessile\_sessile\_unet\_e120 & practical & changed & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_sessile\_sessile\_unet\_e120 & practical & geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_sessile\_sessile\_unet\_e120 & strict & change\_plus\_geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_sessile\_sessile\_unet\_e120 & strict & changed & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_sessile\_sessile\_unet\_e120 & strict & geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+msd\_heart\_mri\_mediafinal\_graphseg\_mri\_e120 & practical & change\_plus\_geom & -0.0088 & 0.0166 & -0.2502 & 0.189 & 0.450 & msd\_heart\_mri\_mediafinal\_graphseg\_mri\_e120\_zoo:remove\_small:a250.00 \\
+msd\_heart\_mri\_mediafinal\_graphseg\_mri\_e120 & practical & changed & +0.0000 & 0.0000 & -0.0013 & 0.045 & 0.856 & msd\_heart\_mri\_mediafinal\_graphseg\_mri\_e120\_zoo:close\_only:a9.00 \\
+msd\_heart\_mri\_mediafinal\_graphseg\_mri\_e120 & practical & geom & -0.0081 & 0.0158 & -0.2502 & 0.180 & 0.468 & msd\_heart\_mri\_mediafinal\_graphseg\_mri\_e120\_zoo:remove\_small:a250.00 \\
+msd\_heart\_mri\_mediafinal\_graphseg\_mri\_e120 & strict & change\_plus\_geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+msd\_heart\_mri\_mediafinal\_graphseg\_mri\_e120 & strict & changed & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+msd\_heart\_mri\_mediafinal\_graphseg\_mri\_e120 & strict & geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+msd\_heart\_mri\_mediafinal\_unet\_mri\_e120 & practical & change\_plus\_geom & +0.0000 & 0.0000 & -0.0029 & 0.090 & 0.766 & msd\_heart\_mri\_mediafinal\_unet\_mri\_e120\_zoo:open\_close:a9.00 \\
+msd\_heart\_mri\_mediafinal\_unet\_mri\_e120 & practical & changed & +0.0000 & 0.0000 & -0.0029 & 0.090 & 0.730 & msd\_heart\_mri\_mediafinal\_unet\_mri\_e120\_zoo:open\_close:a9.00 \\
+msd\_heart\_mri\_mediafinal\_unet\_mri\_e120 & practical & geom & +0.0000 & 0.0000 & -0.0029 & 0.090 & 0.766 & msd\_heart\_mri\_mediafinal\_unet\_mri\_e120\_zoo:open\_close:a9.00 \\
+msd\_heart\_mri\_mediafinal\_unet\_mri\_e120 & strict & change\_plus\_geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+msd\_heart\_mri\_mediafinal\_unet\_mri\_e120 & strict & changed & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+msd\_heart\_mri\_mediafinal\_unet\_mri\_e120 & strict & geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+ph2\_mediafinal\_unet\_e120 & practical & change\_plus\_geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+ph2\_mediafinal\_unet\_e120 & practical & changed & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+ph2\_mediafinal\_unet\_e120 & practical & geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+ph2\_mediafinal\_unet\_e120 & strict & change\_plus\_geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+ph2\_mediafinal\_unet\_e120 & strict & changed & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+ph2\_mediafinal\_unet\_e120 & strict & geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+ph2\_ph2\_unet\_e120 & practical & change\_plus\_geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+ph2\_ph2\_unet\_e120 & practical & changed & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+ph2\_ph2\_unet\_e120 & practical & geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+ph2\_ph2\_unet\_e120 & strict & change\_plus\_geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+ph2\_ph2\_unet\_e120 & strict & changed & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+ph2\_ph2\_unet\_e120 & strict & geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+polyps\_official\_mediafinal\_graphseg\_e120 & practical & change\_plus\_geom & +0.0013 & 0.0000 & -0.0196 & 0.113 & 0.810 & polyps\_official\_mediafinal\_graphseg\_e120\_zoo:close\_only:a11.00 \\
+polyps\_official\_mediafinal\_graphseg\_e120 & practical & changed & +0.0026 & 0.0000 & -0.0455 & 0.148 & 0.717 & polyps\_official\_mediafinal\_graphseg\_e120\_zoo:close\_only:a11.00 \\
+polyps\_official\_mediafinal\_graphseg\_e120 & practical & geom & +0.0015 & 0.0000 & -0.0250 & 0.123 & 0.779 & polyps\_official\_mediafinal\_graphseg\_e120\_zoo:close\_only:a11.00 \\
+polyps\_official\_mediafinal\_graphseg\_e120 & strict & change\_plus\_geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+polyps\_official\_mediafinal\_graphseg\_e120 & strict & changed & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+polyps\_official\_mediafinal\_graphseg\_e120 & strict & geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+polyps\_official\_mediafinal\_unet\_e120 & practical & change\_plus\_geom & +0.0024 & 0.0021 & -0.2642 & 0.125 & 0.469 & polyps\_official\_mediafinal\_unet\_e120\_zoo:binary\_morph:a9.00 \\
+polyps\_official\_mediafinal\_unet\_e120 & practical & changed & +0.0009 & 0.0017 & -0.1564 & 0.125 & 0.456 & polyps\_official\_mediafinal\_unet\_e120\_zoo:binary\_morph:a9.00 \\
+polyps\_official\_mediafinal\_unet\_e120 & practical & geom & +0.0037 & 0.0018 & -0.2642 & 0.120 & 0.466 & polyps\_official\_mediafinal\_unet\_e120\_zoo:binary\_morph:a9.00 \\
+polyps\_official\_mediafinal\_unet\_e120 & strict & change\_plus\_geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+polyps\_official\_mediafinal\_unet\_e120 & strict & changed & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+polyps\_official\_mediafinal\_unet\_e120 & strict & geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+polyps\_official\_polyps\_graphseg\_e120 & practical & change\_plus\_geom & +0.0000 & 0.0000 & +0.0000 & 0.050 & 0.932 & polyps\_official\_polyps\_graphseg\_e120\_zoo:close\_only:a11.00 \\
+polyps\_official\_polyps\_graphseg\_e120 & practical & changed & +0.0000 & 0.0000 & -0.0174 & 0.070 & 0.907 & polyps\_official\_polyps\_graphseg\_e120\_zoo:close\_only:a11.00 \\
+polyps\_official\_polyps\_graphseg\_e120 & practical & geom & +0.0000 & 0.0000 & -0.0021 & 0.053 & 0.922 & polyps\_official\_polyps\_graphseg\_e120\_zoo:close\_only:a11.00 \\
+polyps\_official\_polyps\_graphseg\_e120 & strict & change\_plus\_geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+polyps\_official\_polyps\_graphseg\_e120 & strict & changed & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+polyps\_official\_polyps\_graphseg\_e120 & strict & geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+polyps\_official\_polyps\_unet\_e120 & practical & change\_plus\_geom & +0.0000 & 0.0000 & -0.0020 & 0.085 & 0.892 & polyps\_official\_polyps\_unet\_e120\_zoo:close\_only:a9.00 \\
+polyps\_official\_polyps\_unet\_e120 & practical & changed & +0.0000 & 0.0000 & -0.0040 & 0.090 & 0.850 & polyps\_official\_polyps\_unet\_e120\_zoo:close\_only:a11.00 \\
+polyps\_official\_polyps\_unet\_e120 & practical & geom & +0.0000 & 0.0000 & -0.0022 & 0.085 & 0.892 & polyps\_official\_polyps\_unet\_e120\_zoo:close\_only:a11.00 \\
+polyps\_official\_polyps\_unet\_e120 & strict & change\_plus\_geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+polyps\_official\_polyps\_unet\_e120 & strict & changed & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+polyps\_official\_polyps\_unet\_e120 & strict & geom & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,14 @@
+\begin{table}[t]
+\centering
+\caption{Learned-refiner stress diagnostic on the external polyp GraphSeg setting. A trained UNet checkpoint is treated as a stronger learned refiner candidate over the GraphSeg host. The fixed learned refiner improves average Dice but has a severe harm tail; the primary SafeRefine controller therefore falls back to the host.}
+\label{tab:learned_refiner_pair}
+\begin{tabular}{llrrrrr}
+\toprule
+Policy & Selection & Test gain & Mean harm & Worst drop & Harmed & Drop$>0.05$ \\
+\midrule
+Fixed learned refiner & UNet action & +0.2074 & 0.0405 & -0.6678 & 0.2857 & 0.2030 \\
+Utility threshold & Calibrated, no UCB & +0.2009 & 0.0404 & -0.6678 & 0.2807 & 0.2030 \\
+SafeRefine primary & Hoeffding UCB & +0.0000 & 0.0000 & +0.0000 & 0.0000 & 0.0000 \\
+\bottomrule
+\end{tabular}
+\end{table}

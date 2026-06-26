@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Nested Bernoulli tail-risk SafeRefine policy with $\epsilon=0.01$.}
+\label{tab:tail_risk_nested_eps001_bernoulli_best}
+\begin{tabular}{llllllllll}
+\toprule
+setting & split & action & eps & gain & harm & harmed\_rate & drop\_gt\_0.05 & worst\_drop & revert\_rate \\
+\midrule
+ISIC / UNet & image & host & 0.010 & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+Kvasir / GraphSeg & image & host & 0.010 & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+Kvasir / UNet & image & host & 0.010 & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+MSD Heart MRI / GraphSeg & patient & host & 0.010 & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+MSD Heart MRI / UNet & patient & host & 0.010 & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+PH2 / UNet & image & host & 0.010 & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+Polyp ext. / GraphSeg & image & host & 0.010 & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+Polyp ext. / UNet & image & host & 0.010 & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+\bottomrule
+\end{tabular}
+\end{table*}

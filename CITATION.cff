@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the SafeRefine paper."
+title: "SafeRefine: Certification Frontiers for Risk-Controlled Segmentation Refinement"
+abstract: >-
+  Model-agnostic calibration framework that wraps a host segmenter and a
+  portfolio of candidate actions, accepting a non-host action only when its
+  finite-sample upper-confidence risk (harmed-rate, large-drop rate, mean harm)
+  is certified; otherwise it preserves the host prediction exactly.
+authors:
+  - family-names: "Author"
+    given-names: "One"
+type: software
+license: MIT
+repository-code: "https://github.com/Dyniel/saferefine"
+keywords:
+  - medical image segmentation
+  - conformal risk control
+  - certification frontier
+  - post-processing
+  - host fallback

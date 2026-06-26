@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Certification versus utility summary. SafeRefine is evaluated first as a finite-sample certification and refusal framework; utility-frontier rows are secondary diagnostics, not a safe-improvement mode.}
+\label{tab:certification_vs_utility}
+\begin{tabular}{p{0.20\textwidth}p{0.27\textwidth}p{0.15\textwidth}p{0.27\textwidth}}
+\toprule
+Mode & Safety claim & Non-host certified? & Interpretation \\
+\midrule
+Primary full tail-risk & Harmed-rate, drop05, and mean-harm upper-confidence constraints. & No & Conservative calibrated refusal; the current refiners are not certifiable under the primary contract. \\
+Nested $\epsilon=0.01$ & Reduced multiplicity with action selection separated from threshold calibration. & No & Refusal is not only a union-bound or infinitesimal-Dice artifact. \\
+Gamma frontier & Relaxed moderate-drop budget $\Pr(g<-0.05)$. & Sometimes & Certification is budget-dependent; relaxed rows are sensitivity analyses. \\
+Severe-tail & Additional constraint on $\Pr(g<-0.20)$. & No & Catastrophic-risk protection returns all settings to the host under current calibration evidence. \\
+Utility-frontier & Predefined relaxed diagnostic protocol with measured residual harm. & Mixed & Useful refinements exist, but utility is uneven and uncertified under the primary safety contract. \\
+Oracle headroom & Per-image diagnostic upper bound on portfolio utility. & Diagnostic only & The portfolio has headroom, but imperfect risk scores do not reliably recover oracle utility. \\
+\bottomrule
+\end{tabular}
+\end{table*}

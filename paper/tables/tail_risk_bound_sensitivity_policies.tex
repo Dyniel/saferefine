@@ -1,0 +1,108 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Tail-risk primary policy sensitivity across finite-sample upper-bound choices.}
+\label{tab:tail_risk_bound_sensitivity}
+\begin{tabular}{lllllllllll}
+\toprule
+setting & bound & risk\_score & action & gain & harm & harmed\_rate & drop\_gt\_0.05 & worst\_drop & revert\_rate & split\_group \\
+\midrule
+ISIC / UNet & clopper\_pearson & change\_plus\_geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+ISIC / UNet & clopper\_pearson & changed & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+ISIC / UNet & clopper\_pearson & geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+ISIC / UNet & clopper\_pearson & host\_uncertainty & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+ISIC / UNet & empirical\_bernstein & change\_plus\_geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+ISIC / UNet & empirical\_bernstein & changed & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+ISIC / UNet & empirical\_bernstein & geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+ISIC / UNet & empirical\_bernstein & host\_uncertainty & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+ISIC / UNet & hoeffding & change\_plus\_geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+ISIC / UNet & hoeffding & changed & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+ISIC / UNet & hoeffding & geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+ISIC / UNet & hoeffding & host\_uncertainty & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Kvasir / GraphSeg & clopper\_pearson & change\_plus\_geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Kvasir / GraphSeg & clopper\_pearson & changed & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Kvasir / GraphSeg & clopper\_pearson & geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Kvasir / GraphSeg & clopper\_pearson & host\_uncertainty & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Kvasir / GraphSeg & empirical\_bernstein & change\_plus\_geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Kvasir / GraphSeg & empirical\_bernstein & changed & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Kvasir / GraphSeg & empirical\_bernstein & geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Kvasir / GraphSeg & empirical\_bernstein & host\_uncertainty & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Kvasir / GraphSeg & hoeffding & change\_plus\_geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Kvasir / GraphSeg & hoeffding & changed & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Kvasir / GraphSeg & hoeffding & geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Kvasir / GraphSeg & hoeffding & host\_uncertainty & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Kvasir / UNet & clopper\_pearson & change\_plus\_geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Kvasir / UNet & clopper\_pearson & changed & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Kvasir / UNet & clopper\_pearson & geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Kvasir / UNet & clopper\_pearson & host\_uncertainty & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Kvasir / UNet & empirical\_bernstein & change\_plus\_geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Kvasir / UNet & empirical\_bernstein & changed & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Kvasir / UNet & empirical\_bernstein & geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Kvasir / UNet & empirical\_bernstein & host\_uncertainty & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Kvasir / UNet & hoeffding & change\_plus\_geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Kvasir / UNet & hoeffding & changed & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Kvasir / UNet & hoeffding & geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Kvasir / UNet & hoeffding & host\_uncertainty & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+MSD Heart MRI / GraphSeg & clopper\_pearson & change\_plus\_geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & patient \\
+MSD Heart MRI / GraphSeg & clopper\_pearson & changed & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & patient \\
+MSD Heart MRI / GraphSeg & clopper\_pearson & geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & patient \\
+MSD Heart MRI / GraphSeg & clopper\_pearson & host\_uncertainty & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & patient \\
+MSD Heart MRI / GraphSeg & empirical\_bernstein & change\_plus\_geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & patient \\
+MSD Heart MRI / GraphSeg & empirical\_bernstein & changed & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & patient \\
+MSD Heart MRI / GraphSeg & empirical\_bernstein & geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & patient \\
+MSD Heart MRI / GraphSeg & empirical\_bernstein & host\_uncertainty & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & patient \\
+MSD Heart MRI / GraphSeg & hoeffding & change\_plus\_geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & patient \\
+MSD Heart MRI / GraphSeg & hoeffding & changed & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & patient \\
+MSD Heart MRI / GraphSeg & hoeffding & geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & patient \\
+MSD Heart MRI / GraphSeg & hoeffding & host\_uncertainty & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & patient \\
+MSD Heart MRI / UNet & clopper\_pearson & change\_plus\_geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & patient \\
+MSD Heart MRI / UNet & clopper\_pearson & changed & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & patient \\
+MSD Heart MRI / UNet & clopper\_pearson & geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & patient \\
+MSD Heart MRI / UNet & clopper\_pearson & host\_uncertainty & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & patient \\
+MSD Heart MRI / UNet & empirical\_bernstein & change\_plus\_geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & patient \\
+MSD Heart MRI / UNet & empirical\_bernstein & changed & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & patient \\
+MSD Heart MRI / UNet & empirical\_bernstein & geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & patient \\
+MSD Heart MRI / UNet & empirical\_bernstein & host\_uncertainty & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & patient \\
+MSD Heart MRI / UNet & hoeffding & change\_plus\_geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & patient \\
+MSD Heart MRI / UNet & hoeffding & changed & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & patient \\
+MSD Heart MRI / UNet & hoeffding & geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & patient \\
+MSD Heart MRI / UNet & hoeffding & host\_uncertainty & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & patient \\
+PH2 / UNet & clopper\_pearson & change\_plus\_geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+PH2 / UNet & clopper\_pearson & changed & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+PH2 / UNet & clopper\_pearson & geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+PH2 / UNet & clopper\_pearson & host\_uncertainty & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+PH2 / UNet & empirical\_bernstein & change\_plus\_geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+PH2 / UNet & empirical\_bernstein & changed & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+PH2 / UNet & empirical\_bernstein & geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+PH2 / UNet & empirical\_bernstein & host\_uncertainty & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+PH2 / UNet & hoeffding & change\_plus\_geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+PH2 / UNet & hoeffding & changed & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+PH2 / UNet & hoeffding & geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+PH2 / UNet & hoeffding & host\_uncertainty & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Polyp ext. / GraphSeg & clopper\_pearson & change\_plus\_geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Polyp ext. / GraphSeg & clopper\_pearson & changed & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Polyp ext. / GraphSeg & clopper\_pearson & geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Polyp ext. / GraphSeg & clopper\_pearson & host\_uncertainty & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Polyp ext. / GraphSeg & empirical\_bernstein & change\_plus\_geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Polyp ext. / GraphSeg & empirical\_bernstein & changed & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Polyp ext. / GraphSeg & empirical\_bernstein & geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Polyp ext. / GraphSeg & empirical\_bernstein & host\_uncertainty & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Polyp ext. / GraphSeg & hoeffding & change\_plus\_geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Polyp ext. / GraphSeg & hoeffding & changed & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Polyp ext. / GraphSeg & hoeffding & geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Polyp ext. / GraphSeg & hoeffding & host\_uncertainty & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Polyp ext. / UNet & clopper\_pearson & change\_plus\_geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Polyp ext. / UNet & clopper\_pearson & changed & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Polyp ext. / UNet & clopper\_pearson & geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Polyp ext. / UNet & clopper\_pearson & host\_uncertainty & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Polyp ext. / UNet & empirical\_bernstein & change\_plus\_geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Polyp ext. / UNet & empirical\_bernstein & changed & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Polyp ext. / UNet & empirical\_bernstein & geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Polyp ext. / UNet & empirical\_bernstein & host\_uncertainty & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Polyp ext. / UNet & hoeffding & change\_plus\_geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Polyp ext. / UNet & hoeffding & changed & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Polyp ext. / UNet & hoeffding & geom & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+Polyp ext. / UNet & hoeffding & host\_uncertainty & host & +0.0000 & 0.0000 & 0.000 & 0.000 & +0.0000 & 1.000 & image \\
+\bottomrule
+\end{tabular}
+\end{table*}

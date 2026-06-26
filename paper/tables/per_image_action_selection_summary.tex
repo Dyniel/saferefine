@@ -1,0 +1,68 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Per-image action selection with separate meta-training, calibration, and test splits and multi-constraint feasibility.}
+\label{tab:per_image_action_selection}
+\begin{tabular}{lllllllll}
+\toprule
+setting & policy & gain & harm & harmed\_rate & drop\_gt\_0.05 & cvar\_harm\_10 & worst\_drop & revert\_rate \\
+\midrule
+ISIC / UNet & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+ISIC / UNet & oracle & +0.0111 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0001 & 0.000 \\
+ISIC / UNet & per\_image\_changed & +0.0000 & 0.0000 & 0.024 & 0.000 & 0.0000 & -0.0001 & 0.342 \\
+ISIC / UNet & per\_image\_geom & +0.0000 & 0.0000 & 0.100 & 0.000 & 0.0002 & -0.0010 & 0.300 \\
+ISIC / UNet & per\_image\_change\_plus\_geom & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 0.342 \\
+ISIC / UNet & per\_image\_host\_uncertainty & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+ISIC / UNet & per\_image\_quality\_risk & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+Kvasir / GraphSeg & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+Kvasir / GraphSeg & oracle & +0.0615 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 0.000 \\
+Kvasir / GraphSeg & per\_image\_changed & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+Kvasir / GraphSeg & per\_image\_geom & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+Kvasir / GraphSeg & per\_image\_change\_plus\_geom & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+Kvasir / GraphSeg & per\_image\_host\_uncertainty & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+Kvasir / GraphSeg & per\_image\_quality\_risk & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+Kvasir / UNet & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+Kvasir / UNet & oracle & +0.0210 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0002 & 0.000 \\
+Kvasir / UNet & per\_image\_changed & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+Kvasir / UNet & per\_image\_geom & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+Kvasir / UNet & per\_image\_change\_plus\_geom & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+Kvasir / UNet & per\_image\_host\_uncertainty & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+Kvasir / UNet & per\_image\_quality\_risk & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+MSD Heart MRI / GraphSeg & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+MSD Heart MRI / GraphSeg & oracle & +0.1237 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 0.032 \\
+MSD Heart MRI / GraphSeg & per\_image\_changed & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+MSD Heart MRI / GraphSeg & per\_image\_geom & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+MSD Heart MRI / GraphSeg & per\_image\_change\_plus\_geom & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+MSD Heart MRI / GraphSeg & per\_image\_host\_uncertainty & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+MSD Heart MRI / GraphSeg & per\_image\_quality\_risk & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+MSD Heart MRI / UNet & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+MSD Heart MRI / UNet & oracle & +0.0484 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 0.081 \\
+MSD Heart MRI / UNet & per\_image\_changed & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+MSD Heart MRI / UNet & per\_image\_geom & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+MSD Heart MRI / UNet & per\_image\_change\_plus\_geom & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+MSD Heart MRI / UNet & per\_image\_host\_uncertainty & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+MSD Heart MRI / UNet & per\_image\_quality\_risk & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+PH2 / UNet & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+PH2 / UNet & oracle & +0.0064 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0003 & 0.000 \\
+PH2 / UNet & per\_image\_changed & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+PH2 / UNet & per\_image\_geom & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+PH2 / UNet & per\_image\_change\_plus\_geom & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+PH2 / UNet & per\_image\_host\_uncertainty & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+PH2 / UNet & per\_image\_quality\_risk & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+Polyp ext. / GraphSeg & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+Polyp ext. / GraphSeg & oracle & +0.0656 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 0.015 \\
+Polyp ext. / GraphSeg & per\_image\_changed & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+Polyp ext. / GraphSeg & per\_image\_geom & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+Polyp ext. / GraphSeg & per\_image\_change\_plus\_geom & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+Polyp ext. / GraphSeg & per\_image\_host\_uncertainty & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+Polyp ext. / GraphSeg & per\_image\_quality\_risk & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+Polyp ext. / UNet & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+Polyp ext. / UNet & oracle & +0.0289 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 0.068 \\
+Polyp ext. / UNet & per\_image\_changed & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+Polyp ext. / UNet & per\_image\_geom & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+Polyp ext. / UNet & per\_image\_change\_plus\_geom & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+Polyp ext. / UNet & per\_image\_host\_uncertainty & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+Polyp ext. / UNet & per\_image\_quality\_risk & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 \\
+\bottomrule
+\end{tabular}
+\end{table*}

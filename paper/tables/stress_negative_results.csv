@@ -1,0 +1,5 @@
+run,host_dice,fixed_gain,fixed_harm,fixed_worst_drop,practical_gain,practical_harm,strict_exact_fallback,paper_role
+polyps_official_endo_graphseg_e120,0.256,-0.021,0.0524,-0.509,+0.0000,0.0000,yes,external endoscopy stress test; weak host/refiner regime
+polyps_official_endo_unet_e120,0.126,-0.014,0.0202,-0.388,+0.0000,0.0000,yes,external endoscopy stress test; UNet underfits official polyp mix
+kvasir_sessile_endo_graphseg_e120,0.196,-0.009,0.0215,-0.184,+0.0000,0.0000,yes,small sessile set; practical and strict fallback
+kvasir_sessile_endo_unet_e120,0.330,+0.007,0.0210,-0.450,+0.0000,0.0000,yes,small sessile set; fixed refiner signal but CRC conservative

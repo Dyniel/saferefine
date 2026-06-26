@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Nested Bernoulli non-host diagnostics with $\epsilon=0.01$.}
+\label{tab:tail_risk_nested_eps001_bernoulli_nonhost_diag}
+\begin{tabular}{lllllllllll}
+\toprule
+setting & score & cal\_gain & hr & ucb\_hr & drop05 & ucb\_drop05 & harm & ucb\_harm & fail & M \\
+\midrule
+ISIC / UNet & changed & +0.0007 & 0.004 & 0.128 & 0.000 & 0.124 & 0.0002 & 0.1238 & D05 & 207 \\
+Kvasir / GraphSeg & geom & +0.0356 & 0.053 & 0.333 & 0.000 & 0.280 & 0.0010 & 0.2811 & H,D05 & 39 \\
+Kvasir / UNet & changed & +0.0050 & 0.026 & 0.305 & 0.000 & 0.279 & 0.0008 & 0.2797 & H,D05 & 37 \\
+MSD Heart MRI / GraphSeg & change\_plus\_geom & +0.0000 & 0.000 & 0.202 & 0.000 & 0.202 & 0.0000 & 0.2024 & D05 & 83 \\
+MSD Heart MRI / UNet & changed & +0.0008 & 0.000 & 0.186 & 0.000 & 0.186 & 0.0000 & 0.1865 & D05 & 30 \\
+PH2 / UNet & change\_plus\_geom & +0.0001 & 0.000 & 0.480 & 0.000 & 0.480 & 0.0000 & 0.4802 & H,D05 & 4 \\
+Polyp ext. / GraphSeg & changed & +0.0135 & 0.025 & 0.161 & 0.000 & 0.136 & 0.0007 & 0.1366 & D05 & 162 \\
+Polyp ext. / UNet & change\_plus\_geom & +0.0175 & 0.040 & 0.176 & 0.015 & 0.151 & 0.0028 & 0.1387 & D05 & 162 \\
+\bottomrule
+\end{tabular}
+\end{table*}

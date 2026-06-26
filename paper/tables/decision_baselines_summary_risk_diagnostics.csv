@@ -1,0 +1,41 @@
+setting,risk_score,harm_rate,AUROC,AUPRC,n_actions
+ISIC / UNet,changed,0.377,0.532,0.390,15500
+ISIC / UNet,geom,0.377,0.538,0.399,15500
+ISIC / UNet,change_plus_geom,0.377,0.537,0.400,15500
+ISIC / UNet,host_uncertainty,0.377,0.495,0.379,15500
+ISIC / UNet,quality_risk,0.377,0.488,0.369,15500
+Kvasir / GraphSeg,changed,0.329,0.587,0.389,2325
+Kvasir / GraphSeg,geom,0.329,0.622,0.457,2325
+Kvasir / GraphSeg,change_plus_geom,0.329,0.621,0.451,2325
+Kvasir / GraphSeg,host_uncertainty,0.329,0.495,0.339,2325
+Kvasir / GraphSeg,quality_risk,0.329,0.612,0.479,2325
+Kvasir / UNet,changed,0.339,0.500,0.321,2325
+Kvasir / UNet,geom,0.339,0.493,0.316,2325
+Kvasir / UNet,change_plus_geom,0.339,0.493,0.316,2325
+Kvasir / UNet,host_uncertainty,0.339,0.471,0.328,2325
+Kvasir / UNet,quality_risk,0.339,0.480,0.318,2325
+MSD Heart MRI / GraphSeg,changed,0.465,0.519,0.462,1922
+MSD Heart MRI / GraphSeg,geom,0.465,0.593,0.566,1922
+MSD Heart MRI / GraphSeg,change_plus_geom,0.465,0.592,0.565,1922
+MSD Heart MRI / GraphSeg,host_uncertainty,0.465,0.339,0.358,1922
+MSD Heart MRI / GraphSeg,quality_risk,0.465,0.558,0.517,1922
+MSD Heart MRI / UNet,changed,0.292,0.753,0.465,1922
+MSD Heart MRI / UNet,geom,0.292,0.755,0.505,1922
+MSD Heart MRI / UNet,change_plus_geom,0.292,0.754,0.504,1922
+MSD Heart MRI / UNet,host_uncertainty,0.292,0.663,0.407,1922
+MSD Heart MRI / UNet,quality_risk,0.292,0.733,0.453,1922
+PH2 / UNet,changed,0.297,0.521,0.307,465
+PH2 / UNet,geom,0.297,0.598,0.360,465
+PH2 / UNet,change_plus_geom,0.297,0.595,0.362,465
+PH2 / UNet,host_uncertainty,0.297,0.518,0.375,465
+PH2 / UNet,quality_risk,0.297,0.429,0.261,465
+Polyp ext. / GraphSeg,changed,0.412,0.573,0.478,12369
+Polyp ext. / GraphSeg,geom,0.412,0.584,0.479,12369
+Polyp ext. / GraphSeg,change_plus_geom,0.412,0.584,0.480,12369
+Polyp ext. / GraphSeg,host_uncertainty,0.412,0.458,0.379,12369
+Polyp ext. / GraphSeg,quality_risk,0.412,0.624,0.522,12369
+Polyp ext. / UNet,changed,0.315,0.620,0.394,12369
+Polyp ext. / UNet,geom,0.315,0.600,0.379,12369
+Polyp ext. / UNet,change_plus_geom,0.315,0.600,0.380,12369
+Polyp ext. / UNet,host_uncertainty,0.315,0.603,0.388,12369
+Polyp ext. / UNet,quality_risk,0.315,0.580,0.366,12369

@@ -1,0 +1,20 @@
+# Tail-Risk Primary Variants Best Risk Score
+
+| setting | variant | risk_score | action | gain | harm | harmed_rate | drop_gt_0.05 | worst_drop | revert_rate |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| ISIC / UNet | bernoulli | change_plus_geom | host | +0.0000 | 0.0000 | 0.000 | 0.000 | +0.0000 | 1.000 |
+| ISIC / UNet | full | change_plus_geom | host | +0.0000 | 0.0000 | 0.000 | 0.000 | +0.0000 | 1.000 |
+| Kvasir / GraphSeg | bernoulli | change_plus_geom | host | +0.0000 | 0.0000 | 0.000 | 0.000 | +0.0000 | 1.000 |
+| Kvasir / GraphSeg | full | change_plus_geom | host | +0.0000 | 0.0000 | 0.000 | 0.000 | +0.0000 | 1.000 |
+| Kvasir / UNet | bernoulli | change_plus_geom | host | +0.0000 | 0.0000 | 0.000 | 0.000 | +0.0000 | 1.000 |
+| Kvasir / UNet | full | change_plus_geom | host | +0.0000 | 0.0000 | 0.000 | 0.000 | +0.0000 | 1.000 |
+| MSD Heart MRI / GraphSeg | bernoulli | change_plus_geom | host | +0.0000 | 0.0000 | 0.000 | 0.000 | +0.0000 | 1.000 |
+| MSD Heart MRI / GraphSeg | full | change_plus_geom | host | +0.0000 | 0.0000 | 0.000 | 0.000 | +0.0000 | 1.000 |
+| MSD Heart MRI / UNet | bernoulli | change_plus_geom | host | +0.0000 | 0.0000 | 0.000 | 0.000 | +0.0000 | 1.000 |
+| MSD Heart MRI / UNet | full | change_plus_geom | host | +0.0000 | 0.0000 | 0.000 | 0.000 | +0.0000 | 1.000 |
+| PH2 / UNet | bernoulli | change_plus_geom | host | +0.0000 | 0.0000 | 0.000 | 0.000 | +0.0000 | 1.000 |
+| PH2 / UNet | full | change_plus_geom | host | +0.0000 | 0.0000 | 0.000 | 0.000 | +0.0000 | 1.000 |
+| Polyp ext. / GraphSeg | bernoulli | change_plus_geom | host | +0.0000 | 0.0000 | 0.000 | 0.000 | +0.0000 | 1.000 |
+| Polyp ext. / GraphSeg | full | change_plus_geom | host | +0.0000 | 0.0000 | 0.000 | 0.000 | +0.0000 | 1.000 |
+| Polyp ext. / UNet | bernoulli | change_plus_geom | host | +0.0000 | 0.0000 | 0.000 | 0.000 | +0.0000 | 1.000 |
+| Polyp ext. / UNet | full | change_plus_geom | host | +0.0000 | 0.0000 | 0.000 | 0.000 | +0.0000 | 1.000 |

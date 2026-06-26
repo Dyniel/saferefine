@@ -1,0 +1,12 @@
+# Compact Best Non-Host Tail-Risk Diagnostics
+
+| setting | score | cal_gain | hr | ucb_hr | drop05 | ucb_drop05 | harm | ucb_harm | fail |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| ISIC / UNet | changed | +0.0028 | 0.278 | 0.384 | 0.002 | 0.108 | 0.0006 | 0.1065 | H,D05,MH |
+| Kvasir / GraphSeg | change_plus_geom | +0.0220 | 0.120 | 0.379 | 0.013 | 0.272 | 0.0020 | 0.2606 | H,D05,MH |
+| Kvasir / UNet | changed | +0.0027 | 0.240 | 0.497 | 0.000 | 0.257 | 0.0002 | 0.2567 | H,D05,MH |
+| MSD Heart MRI / GraphSeg | change_plus_geom | +0.0155 | 0.131 | 0.314 | 0.025 | 0.208 | 0.0048 | 0.1880 | H,D05,MH |
+| MSD Heart MRI / UNet | change_plus_geom | +0.0013 | 0.156 | 0.336 | 0.000 | 0.180 | 0.0003 | 0.1800 | H,D05,MH |
+| PH2 / UNet | host_uncertainty | +0.0028 | 0.000 | 0.533 | 0.000 | 0.533 | 0.0000 | 0.5326 | H,D05,MH |
+| Polyp ext. / GraphSeg | change_plus_geom | +0.0117 | 0.313 | 0.433 | 0.003 | 0.122 | 0.0021 | 0.1218 | H,D05,MH |
+| Polyp ext. / UNet | changed | +0.0118 | 0.221 | 0.338 | 0.015 | 0.132 | 0.0022 | 0.1196 | H,D05,MH |

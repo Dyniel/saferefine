@@ -1,0 +1,97 @@
+setting,bound,risk_score,action,gain,harm,harmed_rate,drop_gt_0.05,worst_drop,revert_rate,split_group
+ISIC / UNet,clopper_pearson,change_plus_geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+ISIC / UNet,clopper_pearson,changed,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+ISIC / UNet,clopper_pearson,geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+ISIC / UNet,clopper_pearson,host_uncertainty,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+ISIC / UNet,empirical_bernstein,change_plus_geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+ISIC / UNet,empirical_bernstein,changed,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+ISIC / UNet,empirical_bernstein,geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+ISIC / UNet,empirical_bernstein,host_uncertainty,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+ISIC / UNet,hoeffding,change_plus_geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+ISIC / UNet,hoeffding,changed,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+ISIC / UNet,hoeffding,geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+ISIC / UNet,hoeffding,host_uncertainty,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Kvasir / GraphSeg,clopper_pearson,change_plus_geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Kvasir / GraphSeg,clopper_pearson,changed,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Kvasir / GraphSeg,clopper_pearson,geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Kvasir / GraphSeg,clopper_pearson,host_uncertainty,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Kvasir / GraphSeg,empirical_bernstein,change_plus_geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Kvasir / GraphSeg,empirical_bernstein,changed,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Kvasir / GraphSeg,empirical_bernstein,geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Kvasir / GraphSeg,empirical_bernstein,host_uncertainty,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Kvasir / GraphSeg,hoeffding,change_plus_geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Kvasir / GraphSeg,hoeffding,changed,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Kvasir / GraphSeg,hoeffding,geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Kvasir / GraphSeg,hoeffding,host_uncertainty,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Kvasir / UNet,clopper_pearson,change_plus_geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Kvasir / UNet,clopper_pearson,changed,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Kvasir / UNet,clopper_pearson,geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Kvasir / UNet,clopper_pearson,host_uncertainty,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Kvasir / UNet,empirical_bernstein,change_plus_geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Kvasir / UNet,empirical_bernstein,changed,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Kvasir / UNet,empirical_bernstein,geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Kvasir / UNet,empirical_bernstein,host_uncertainty,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Kvasir / UNet,hoeffding,change_plus_geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Kvasir / UNet,hoeffding,changed,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Kvasir / UNet,hoeffding,geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Kvasir / UNet,hoeffding,host_uncertainty,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+MSD Heart MRI / GraphSeg,clopper_pearson,change_plus_geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,patient
+MSD Heart MRI / GraphSeg,clopper_pearson,changed,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,patient
+MSD Heart MRI / GraphSeg,clopper_pearson,geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,patient
+MSD Heart MRI / GraphSeg,clopper_pearson,host_uncertainty,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,patient
+MSD Heart MRI / GraphSeg,empirical_bernstein,change_plus_geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,patient
+MSD Heart MRI / GraphSeg,empirical_bernstein,changed,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,patient
+MSD Heart MRI / GraphSeg,empirical_bernstein,geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,patient
+MSD Heart MRI / GraphSeg,empirical_bernstein,host_uncertainty,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,patient
+MSD Heart MRI / GraphSeg,hoeffding,change_plus_geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,patient
+MSD Heart MRI / GraphSeg,hoeffding,changed,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,patient
+MSD Heart MRI / GraphSeg,hoeffding,geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,patient
+MSD Heart MRI / GraphSeg,hoeffding,host_uncertainty,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,patient
+MSD Heart MRI / UNet,clopper_pearson,change_plus_geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,patient
+MSD Heart MRI / UNet,clopper_pearson,changed,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,patient
+MSD Heart MRI / UNet,clopper_pearson,geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,patient
+MSD Heart MRI / UNet,clopper_pearson,host_uncertainty,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,patient
+MSD Heart MRI / UNet,empirical_bernstein,change_plus_geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,patient
+MSD Heart MRI / UNet,empirical_bernstein,changed,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,patient
+MSD Heart MRI / UNet,empirical_bernstein,geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,patient
+MSD Heart MRI / UNet,empirical_bernstein,host_uncertainty,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,patient
+MSD Heart MRI / UNet,hoeffding,change_plus_geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,patient
+MSD Heart MRI / UNet,hoeffding,changed,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,patient
+MSD Heart MRI / UNet,hoeffding,geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,patient
+MSD Heart MRI / UNet,hoeffding,host_uncertainty,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,patient
+PH2 / UNet,clopper_pearson,change_plus_geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+PH2 / UNet,clopper_pearson,changed,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+PH2 / UNet,clopper_pearson,geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+PH2 / UNet,clopper_pearson,host_uncertainty,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+PH2 / UNet,empirical_bernstein,change_plus_geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+PH2 / UNet,empirical_bernstein,changed,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+PH2 / UNet,empirical_bernstein,geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+PH2 / UNet,empirical_bernstein,host_uncertainty,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+PH2 / UNet,hoeffding,change_plus_geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+PH2 / UNet,hoeffding,changed,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+PH2 / UNet,hoeffding,geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+PH2 / UNet,hoeffding,host_uncertainty,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Polyp ext. / GraphSeg,clopper_pearson,change_plus_geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Polyp ext. / GraphSeg,clopper_pearson,changed,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Polyp ext. / GraphSeg,clopper_pearson,geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Polyp ext. / GraphSeg,clopper_pearson,host_uncertainty,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Polyp ext. / GraphSeg,empirical_bernstein,change_plus_geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Polyp ext. / GraphSeg,empirical_bernstein,changed,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Polyp ext. / GraphSeg,empirical_bernstein,geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Polyp ext. / GraphSeg,empirical_bernstein,host_uncertainty,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Polyp ext. / GraphSeg,hoeffding,change_plus_geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Polyp ext. / GraphSeg,hoeffding,changed,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Polyp ext. / GraphSeg,hoeffding,geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Polyp ext. / GraphSeg,hoeffding,host_uncertainty,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Polyp ext. / UNet,clopper_pearson,change_plus_geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Polyp ext. / UNet,clopper_pearson,changed,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Polyp ext. / UNet,clopper_pearson,geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Polyp ext. / UNet,clopper_pearson,host_uncertainty,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Polyp ext. / UNet,empirical_bernstein,change_plus_geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Polyp ext. / UNet,empirical_bernstein,changed,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Polyp ext. / UNet,empirical_bernstein,geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Polyp ext. / UNet,empirical_bernstein,host_uncertainty,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Polyp ext. / UNet,hoeffding,change_plus_geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Polyp ext. / UNet,hoeffding,changed,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Polyp ext. / UNet,hoeffding,geom,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image
+Polyp ext. / UNet,hoeffding,host_uncertainty,host,+0.0000,0.0000,0.000,0.000,+0.0000,1.000,image

@@ -1,0 +1,120 @@
+\documentclass[preprint,12pt]{elsarticle}
+
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{hyperref}
+
+\journal{Medical Image Analysis}
+
+\begin{document}
+
+\begin{frontmatter}
+\title{Supplementary Material for SafeRefine: Harm-Aware Action Selection for Safe Medical Segmentation Refinement}
+\author[inst1]{Author One}
+\author[inst1]{Author Two}
+\author[inst1]{Author Three}
+\address[inst1]{Institution, City, Country}
+\end{frontmatter}
+
+\section{Supplementary Overview}
+
+This supplement provides the full tables underlying the main manuscript. The
+main paper emphasizes the final internally consistent \texttt{mediafinal}
+binary runs. Earlier phase0 and e120 results are retained only as supporting
+evidence for ablations, cross-host behavior, and stress testing.
+
+\section{Final MediaFinal Results}
+
+\input{tables/mediafinal_consistent_results.tex}
+
+\section{Primary Tail-Risk Diagnostics}
+
+\input{tables/tail_risk_primary_summary_nonhost_diagnostics_compact.tex}
+
+\input{tables/tail_risk_bound_sensitivity_aggregate.tex}
+
+\input{tables/tail_risk_variants_primary_variants_best.tex}
+
+\input{tables/tail_risk_failure_decomposition.tex}
+
+\section{Nested Refusal Diagnostics}
+
+\input{tables/tail_risk_nested_eps001_bernoulli_best.tex}
+
+\input{tables/tail_risk_nested_eps001_bernoulli_nonhost_diagnostics_compact.tex}
+
+\section{Relaxed Utility Diagnostics}
+
+\input{tables/tail_risk_nested_eps001_bernoulli_relaxed_protocol.tex}
+
+\input{tables/tail_risk_variants_relaxed_protocol.tex}
+
+\section{Standalone-Segmenter Stress Portfolio}
+
+\input{tables/learned_refiner_stress_detail.tex}
+
+\section{Safety Value Relative to Fixed Refinement}
+
+\input{tables/safety_value_over_fixed.tex}
+
+\section{Final Bootstrap Confidence Intervals}
+
+\input{tables/mediafinal_bootstrap_crc_ablation.tex}
+
+\section{Refiner-Zoo Policies}
+
+\input{tables/refiner_zoo_crc.tex}
+
+\section{Risk-Score and Policy-Mode Ablation}
+
+\input{tables/risk_ablation_crc.tex}
+
+\input{tables/decision_baselines_summary_policies.tex}
+
+\input{tables/decision_baselines_summary_risk_diagnostics.tex}
+
+\input{tables/per_image_action_selection_summary.tex}
+
+\section{Cross-Host Evidence}
+
+\input{tables/cross_host_model_agnostic.tex}
+
+\section{Cross-Dataset Transfer}
+
+\input{tables/cross_dataset_transfer.tex}
+
+\section{Harm-Budget Sweep}
+
+\input{tables/harm_budget_sweep.tex}
+
+\section{Strict Fallback Sanity Check}
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.75\linewidth]{figures/fig_strict_exact_fallback.png}
+    \caption{Strict mode preserves the host in all final runs. This conservative
+    behavior is expected under a zero-harm calibration budget and is reported as
+    a deployment sanity check rather than a utility result.}
+    \label{fig:supp_strict_fallback}
+\end{figure}
+
+\section{Calibration-Fraction Sweep}
+
+\input{tables/calibration_fraction_sweep.tex}
+
+\section{Stress and Negative Results}
+
+\input{tables/stress_negative_results.tex}
+
+\section{Reproducibility Manifest}
+
+\input{tables/mediafinal_reproducibility_manifest.tex}
+
+\section{Qualitative Case Index}
+
+\input{tables/crc_reversion_figure_index.tex}
+
+\end{document}

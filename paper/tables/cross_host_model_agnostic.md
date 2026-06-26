@@ -1,0 +1,17 @@
+# Cross-Host Model-Agnostic Evidence
+
+| dataset | modality | host | stage | host_dice | best_fixed_gain | fixed_harm | best_practical_gain | best_practical_harm | strict_exact_fallback |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| ISIC 2018 | dermoscopy | UNet | e120 | 0.861 | +0.003 | 0.0034 | +0.0000 | 0.0000 | yes |
+| ISIC 2018 | dermoscopy | GraphSeg | phase0 | 0.770 | +0.012 | 0.0113 | +0.0117 | 0.0040 | yes |
+| Kvasir-SEG | endoscopy | GraphSeg | e120 | 0.488 | +0.007 | 0.0424 | +0.0095 | 0.0016 | yes |
+| Kvasir-SEG | endoscopy | UNet | e120 | 0.841 | +0.008 | 0.0082 | +0.0000 | 0.0000 | yes |
+| Kvasir-SEG | endoscopy | GraphSeg | phase0 | 0.468 | -0.030 | 0.0742 | -0.0029 | 0.0164 | yes |
+| Kvasir-Sessile | endoscopy | GraphSeg | e120 | 0.196 | -0.009 | 0.0215 | +0.0000 | 0.0000 | yes |
+| Kvasir-Sessile | endoscopy | UNet | e120 | 0.330 | +0.007 | 0.0210 | +0.0000 | 0.0000 | yes |
+| Kvasir-Sessile | endoscopy | GraphSeg | phase0 | 0.169 | -0.015 | 0.0329 | +0.0000 | 0.0000 | yes |
+| PH2 | dermoscopy | UNet | e120 | 0.908 | +0.005 | 0.0000 | +0.0000 | 0.0000 | yes |
+| PH2 | dermoscopy | GraphSeg | phase0 | 0.927 | +0.011 | 0.0009 | +0.0000 | 0.0000 | yes |
+| Polyp official | endoscopy external | GraphSeg | e120 | 0.256 | -0.021 | 0.0524 | +0.0000 | 0.0000 | yes |
+| Polyp official | endoscopy external | UNet | e120 | 0.126 | -0.014 | 0.0202 | +0.0000 | 0.0000 | yes |
+| Polyp official | endoscopy | GraphSeg | phase0 | 0.253 | -0.018 | 0.0433 | +0.0000 | 0.0000 | yes |

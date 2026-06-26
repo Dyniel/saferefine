@@ -1,0 +1,15 @@
+{
+  "compressed": false,
+  "img_size": 352,
+  "missing_images_without_masks": {
+    "test": 0,
+    "train": 0
+  },
+  "n": 2248,
+  "n_test": 798,
+  "n_train": 1232,
+  "n_val": 218,
+  "name": "polyps_official_352",
+  "out_npz": "data_npz/polyps_official_352.npz",
+  "split_dir": "dataset_splits/polyps_official_352"
+}

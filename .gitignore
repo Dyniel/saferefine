@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Editors
+.idea/
+.vscode/
+
+# Local secrets
+.env
+*.env
+__KEYS__
+
+# Raw data, NPZ bundles, model weights (never committed; see REPRODUCE.md)
+data/
+data_npz/
+raw_data/
+datasets_staging/
+*.npz
+*.npy
+*.pt
+*.pth
+*.nii
+*.nii.gz
+
+# Training/run outputs and logs
+runs/
+logs/
+wandb/
+*.log
+*.out
+
+# Generated reproduction outputs (Tier 1/2 write here; inputs + reference tables are committed)
+results/tail_risk_primary/
+results/tail_risk_bernoulli/
+results/tail_risk_nested_eps001/
+results/tail_risk_nested_gamma_frontier/
+results/tail_risk_nested_gamma_frontier_severe/
+results/tail_risk_bound_sensitivity/
+results/decision_baselines/
+results/per_image_action_selection/
+results/learned_refiner_stress/
+results/positive_control/
+results/_repro_*/

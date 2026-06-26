@@ -1,0 +1,14 @@
+\begin{table}[t]
+\centering
+\caption{MSD Heart MRI volume-level diagnostic on the held-out patient split. Values aggregate slice Dice within each of the three test volumes. The fixed learned UNet refiner has large positive average volume gain, but SafeRefine primary falls back to the GraphSeg host, giving zero volume-level harm by construction.}
+\label{tab:mri_volume_diagnostic}
+\begin{tabular}{lrrrrrl}
+\toprule
+Policy & Volumes & Mean Dice & Mean gain & Mean harm & Harmed vols & Per-volume values \\
+\midrule
+GraphSeg host & 3 & 0.334 &  &  &  & 0.455, 0.269, 0.278 \\
+Fixed learned UNet refiner & 3 & 0.716 & +0.382 & 0.000 & 0/3 & +0.350, +0.307, +0.490 \\
+SafeRefine primary & 3 & 0.334 & +0.000 & 0.000 & 0/3 & +0.000, +0.000, +0.000 \\
+\bottomrule
+\end{tabular}
+\end{table}

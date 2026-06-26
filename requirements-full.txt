@@ -1,0 +1,9 @@
+# Tier 2 (full pipeline: build datasets -> train hosts -> evaluate refiners ->
+# regenerate the per-image CSVs that Tier 1 consumes). Requires a GPU for host
+# training. Install on top of requirements.txt.
+-r requirements.txt
+torch>=2.1
+opencv-python-headless>=4.8
+matplotlib>=3.7
+Pillow>=10.0
+nibabel>=5.1   # MSD Heart MRI (.nii) ingestion only

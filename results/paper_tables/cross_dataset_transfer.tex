@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Cross-dataset calibration-transfer results without target-set recalibration.}
+\label{tab:cross_dataset_transfer}
+\begin{tabular}{lllllllll}
+\toprule
+transfer & best\_practical\_risk & target\_gain & target\_harm & target\_worst\_drop & target\_revert\_rate & selected\_action & strict\_exact\_fallback & paper\_role \\
+\midrule
+isic\_to\_ph2\_graphseg & changed & +0.0063 & 0.0000 & -0.0018 & 0.067 & binary\_morph:a11.00 & yes & positive dermoscopy transfer \\
+isic\_to\_ph2\_unet & change\_plus\_geom & +0.0000 & 0.0000 & +0.0000 & 1.000 & binary\_morph:a5.00 & yes & positive dermoscopy transfer \\
+kvasir\_to\_polyps\_graphseg & changed & -0.0152 & 0.0239 & -0.4624 & 0.426 & binary\_morph:a3.00 & yes & external stress test; practical transfer can be unsafe \\
+kvasir\_to\_polyps\_unet & change\_plus\_geom & +0.0000 & 0.0000 & -0.0016 & 0.990 & binary\_morph:a7.00 & yes & external stress test; high fallback limits harm \\
+kvasir\_to\_sessile\_graphseg & change\_plus\_geom & +0.0011 & 0.0000 & -0.0106 & 0.500 & binary\_morph:a7.00 & yes & related endoscopy transfer; mixed utility, fallback important \\
+kvasir\_to\_sessile\_unet & change\_plus\_geom & +0.0000 & 0.0000 & +0.0000 & 1.000 & binary\_morph:a7.00 & yes & related endoscopy transfer; mixed utility, fallback important \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,14 @@
+\begin{table}[t]
+\centering
+\caption{Standalone-segmenter stress portfolio. An independently trained UNet checkpoint is offered as an alternative action over the corresponding GraphSeg host. It is a separate segmenter, not a host-conditioned refiner---it does not receive the host mask or probabilities---and is gated by a host-uncertainty risk score. The standalone candidate improves mean Dice in each setting, but severe case-level degradation remains, and the primary SafeRefine contract falls back to the host.}
+\label{tab:learned_refiner_stress}
+\begin{tabular}{lrrrrr}
+\toprule
+Setting & Fixed gain & Mean harm & Worst drop & Harmed & SafeRefine action \\
+\midrule
+Kvasir / GraphSeg$\rightarrow$UNet & +0.3729 & 0.0007 & -0.0175 & 0.0533 & host \\
+Polyp ext. / GraphSeg$\rightarrow$UNet & +0.2074 & 0.0405 & -0.6678 & 0.2857 & host \\
+MSD Heart / GraphSeg$\rightarrow$UNet & +0.4899 & 0.0049 & -0.3040 & 0.0323 & host \\
+\bottomrule
+\end{tabular}
+\end{table}

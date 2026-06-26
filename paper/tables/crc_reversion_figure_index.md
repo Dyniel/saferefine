@@ -1,0 +1,25 @@
+# CRC Reversion Figure Index
+
+| dataset | case_id | method | host_dice | fixed_dice | crc_dice | fixed_gain | risk | threshold | figure |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| isic2018_task1 | test/ISIC_0036223 |  | 0.444 | 0.000 | 0.444 | -0.444 | 0.260 | 0.184 | results/figures/crc_reversion_cases/isic2018_task1_test_ISIC_0036223_a11.png |
+| isic2018_task1 | test/ISIC_0036083 |  | 0.400 | 0.000 | 0.400 | -0.400 | 0.313 | 0.184 | results/figures/crc_reversion_cases/isic2018_task1_test_ISIC_0036083_a11.png |
+| isic2018_task1 | test/ISIC_0022217 |  | 0.684 | 0.346 | 0.684 | -0.338 | 0.211 | 0.184 | results/figures/crc_reversion_cases/isic2018_task1_test_ISIC_0022217_a11.png |
+| kvasir_seg | cju7f9umg2olj0987fj5y285w |  | 0.441 | 0.000 | 0.441 | -0.441 | 0.710 | 0.411 | results/figures/crc_reversion_cases/kvasir_seg_cju7f9umg2olj0987fj5y285w_a9.png |
+| kvasir_seg | cju5x7iskmad90818frchyfwd |  | 0.379 | 0.000 | 0.379 | -0.379 | 0.779 | 0.411 | results/figures/crc_reversion_cases/kvasir_seg_cju5x7iskmad90818frchyfwd_a9.png |
+| kvasir_seg | cju7aklv31h4309871m29l4e7 |  | 0.369 | 0.000 | 0.369 | -0.369 | 0.563 | 0.411 | results/figures/crc_reversion_cases/kvasir_seg_cju7aklv31h4309871m29l4e7_a9.png |
+| polyps_official | test/Kvasir_cju1f8w0t65en0799m9oacq0q |  | 0.490 | 0.000 | 0.490 | -0.490 | 0.999 | 0.012 | results/figures/crc_reversion_cases/polyps_official_test_Kvasir_cju1f8w0t65en0799m9oacq0q_a11.png |
+| polyps_official | test/CVC-ColonDB_80 |  | 0.448 | 0.000 | 0.448 | -0.448 | 0.162 | 0.012 | results/figures/crc_reversion_cases/polyps_official_test_CVC-ColonDB_80_a11.png |
+| polyps_official | test/CVC-ColonDB_97 |  | 0.414 | 0.000 | 0.414 | -0.414 | 0.268 | 0.012 | results/figures/crc_reversion_cases/polyps_official_test_CVC-ColonDB_97_a11.png |
+| isic2018_task1_mediafinal_unet_e120_zoo | test/ISIC_0036090 | largest_cc | 0.540 | 0.256 | 0.540 | -0.285 | 0.176 | 0.027 | results/figures/mediafinal_crc_reversion_cases/isic2018_task1_mediafinal_unet_e120_zoo_test_ISIC_0036090_largest_cc_a0.png |
+| isic2018_task1_mediafinal_unet_e120_zoo | test/ISIC_0023483 | largest_cc | 0.603 | 0.409 | 0.603 | -0.193 | 0.154 | 0.027 | results/figures/mediafinal_crc_reversion_cases/isic2018_task1_mediafinal_unet_e120_zoo_test_ISIC_0023483_largest_cc_a0.png |
+| isic2018_task1_mediafinal_unet_e120_zoo | test/ISIC_0022219 | largest_cc | 0.722 | 0.550 | 0.722 | -0.172 | 0.064 | 0.027 | results/figures/mediafinal_crc_reversion_cases/isic2018_task1_mediafinal_unet_e120_zoo_test_ISIC_0022219_largest_cc_a0.png |
+| kvasir_seg_mediafinal_graphseg_e120 | cju5x7iskmad90818frchyfwd | binary_morph | 0.423 | 0.000 | 0.423 | -0.423 | 0.695 | 0.349 | results/figures/mediafinal_crc_reversion_cases/kvasir_seg_mediafinal_graphseg_e120_cju5x7iskmad90818frchyfwd_binary_morph_a5.png |
+| kvasir_seg_mediafinal_graphseg_e120 | cju7cp6dw244p0818gncdol4m | binary_morph | 0.391 | 0.000 | 0.391 | -0.391 | 0.464 | 0.349 | results/figures/mediafinal_crc_reversion_cases/kvasir_seg_mediafinal_graphseg_e120_cju7cp6dw244p0818gncdol4m_binary_morph_a5.png |
+| kvasir_seg_mediafinal_graphseg_e120 | cju846ec0kj7z08012o10klrb | binary_morph | 0.340 | 0.000 | 0.340 | -0.340 | 0.502 | 0.349 | results/figures/mediafinal_crc_reversion_cases/kvasir_seg_mediafinal_graphseg_e120_cju846ec0kj7z08012o10klrb_binary_morph_a5.png |
+| polyps_official_mediafinal_graphseg_e120_zoo | test/Kvasir_cju5wrrs0m2af0818vmnajbtw | close_only | 0.580 | 0.517 | 0.580 | -0.063 | 0.013 | 0.004 | results/figures/mediafinal_crc_reversion_cases/polyps_official_mediafinal_graphseg_e120_zoo_test_Kvasir_cju5wrrs0m2af0818vmnajbtw_close_only_a11.png |
+| polyps_official_mediafinal_graphseg_e120_zoo | test/Kvasir_cju2wve9v7esz0878mxsdcy04 | close_only | 0.453 | 0.407 | 0.453 | -0.046 | 0.028 | 0.004 | results/figures/mediafinal_crc_reversion_cases/polyps_official_mediafinal_graphseg_e120_zoo_test_Kvasir_cju2wve9v7esz0878mxsdcy04_close_only_a11.png |
+| polyps_official_mediafinal_graphseg_e120_zoo | test/Kvasir_cju88vx2uoocy075531lc63n3 | close_only | 0.615 | 0.571 | 0.615 | -0.043 | 0.008 | 0.004 | results/figures/mediafinal_crc_reversion_cases/polyps_official_mediafinal_graphseg_e120_zoo_test_Kvasir_cju88vx2uoocy075531lc63n3_close_only_a11.png |
+| polyps_official_mediafinal_unet_e120_zoo | test/ETIS-LaribPolypDB_56 | binary_morph | 0.604 | 0.000 | 0.604 | -0.604 | 0.119 | 0.106 | results/figures/mediafinal_crc_reversion_cases/polyps_official_mediafinal_unet_e120_zoo_test_ETIS-LaribPolypDB_56_binary_morph_a9.png |
+| polyps_official_mediafinal_unet_e120_zoo | test/ETIS-LaribPolypDB_136 | binary_morph | 0.588 | 0.000 | 0.588 | -0.588 | 0.389 | 0.106 | results/figures/mediafinal_crc_reversion_cases/polyps_official_mediafinal_unet_e120_zoo_test_ETIS-LaribPolypDB_136_binary_morph_a9.png |
+| polyps_official_mediafinal_unet_e120_zoo | test/ETIS-LaribPolypDB_153 | binary_morph | 0.526 | 0.000 | 0.526 | -0.526 | 0.251 | 0.106 | results/figures/mediafinal_crc_reversion_cases/polyps_official_mediafinal_unet_e120_zoo_test_ETIS-LaribPolypDB_153_binary_morph_a9.png |

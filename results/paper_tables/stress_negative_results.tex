@@ -1,0 +1,16 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Stress-test results showing unsafe or weak refiner regimes and host-preserving fallback behavior.}
+\label{tab:stress_negative_results}
+\begin{tabular}{lllllllll}
+\toprule
+run & host\_dice & fixed\_gain & fixed\_harm & fixed\_worst\_drop & practical\_gain & practical\_harm & strict\_exact\_fallback & paper\_role \\
+\midrule
+polyps\_official\_endo\_graphseg\_e120 & 0.256 & -0.021 & 0.0524 & -0.509 & +0.0000 & 0.0000 & yes & external endoscopy stress test; weak host/refiner regime \\
+polyps\_official\_endo\_unet\_e120 & 0.126 & -0.014 & 0.0202 & -0.388 & +0.0000 & 0.0000 & yes & external endoscopy stress test; UNet underfits official polyp mix \\
+kvasir\_sessile\_endo\_graphseg\_e120 & 0.196 & -0.009 & 0.0215 & -0.184 & +0.0000 & 0.0000 & yes & small sessile set; practical and strict fallback \\
+kvasir\_sessile\_endo\_unet\_e120 & 0.330 & +0.007 & 0.0210 & -0.450 & +0.0000 & 0.0000 & yes & small sessile set; fixed refiner signal but CRC conservative \\
+\bottomrule
+\end{tabular}
+\end{table*}

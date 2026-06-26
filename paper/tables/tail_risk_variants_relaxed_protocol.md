@@ -1,0 +1,12 @@
+# Predefined Relaxed SafeRefine Protocol
+
+| setting | variant | risk_score | action | gain | harm | harmed_rate | drop_gt_0.05 | worst_drop | revert_rate | oracle_gain | oracle_recovery |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| ISIC / UNet | full | host_uncertainty | isic2018_task1_mediafinal_unet_e120_zoo:prob_gaussian_lcc:a2.00 | +0.0021 | 0.0006 | 0.260 | 0.004 | -0.1529 | 0.386 | +0.0114 | 0.186 |
+| Kvasir / GraphSeg | full | change_plus_geom | kvasir_seg_mediafinal_graphseg_e120_zoo:binary_morph:a11.00 | -0.0052 | 0.0232 | 0.173 | 0.107 | -0.5852 | 0.427 | +0.0814 | -0.064 |
+| Kvasir / UNet | full | changed | kvasir_seg_mediafinal_unet_e120_zoo:binary_morph:a3.00 | +0.0047 | 0.0005 | 0.200 | 0.000 | -0.0204 | 0.187 | +0.0224 | 0.208 |
+| MSD Heart MRI / GraphSeg | full | host_uncertainty | msd_heart_mri_mediafinal_graphseg_mri_e120_zoo:binary_morph:a11.00 | -0.0004 | 0.0004 | 0.016 | 0.000 | -0.0259 | 0.968 | +0.1237 | -0.003 |
+| MSD Heart MRI / UNet | full | changed | msd_heart_mri_mediafinal_unet_mri_e120_zoo:close_only:a11.00 | +0.0003 | 0.0003 | 0.129 | 0.000 | -0.0039 | 0.323 | +0.0484 | 0.007 |
+| PH2 / UNet | full | host_uncertainty | ph2_mediafinal_unet_e120_zoo:largest_cc:a0.00 | -0.0002 | 0.0002 | 0.067 | 0.000 | -0.0029 | 0.667 | +0.0137 | -0.011 |
+| Polyp ext. / GraphSeg | full | geom | polyps_official_mediafinal_graphseg_e120_zoo:close_only:a11.00 | +0.0049 | 0.0012 | 0.218 | 0.000 | -0.0455 | 0.506 | +0.0594 | 0.082 |
+| Polyp ext. / UNet | full | changed | polyps_official_mediafinal_unet_e120_zoo:binary_morph:a11.00 | +0.0021 | 0.0047 | 0.195 | 0.028 | -0.2642 | 0.228 | +0.0282 | 0.074 |

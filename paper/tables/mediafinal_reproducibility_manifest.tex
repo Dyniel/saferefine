@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Run-level provenance for final mediafinal checkpoints, evaluations, policies, and refiner-zoo evaluations.}
+\label{tab:mediafinal_reproducibility_manifest}
+\begin{tabular}{lllllllllll}
+\toprule
+run & arch & host\_dice & best\_fixed\_gain & crc\_gain & crc\_harm & zoo\_crc\_gain & zoo\_crc\_harm & policy\_json\_count & zoo\_policy\_json\_count & checkpoint \\
+\midrule
+isic2018\_task1\_mediafinal\_unet\_e120 & unet\_small & 0.861 & +0.0026 & +0.0000 & 0.0000 & +0.0033 & 0.0015 & 6 & 6 & /users/project1/pt01315/emnlp/grm\_media/runs/binary\_host/isic2018\_task1\_unet\_b32\_s1\_mediafinal\_unet\_e120/ckpt/best.pt \\
+kvasir\_seg\_mediafinal\_graphseg\_e120 & graphseg & 0.488 & +0.0073 & +0.0095 & 0.0016 & +0.0000 & 0.0000 & 6 & 6 & /users/project1/pt01315/emnlp/grm\_media/runs/binary\_host/kvasir\_seg\_graphseg\_segformer\_b0\_s1\_mediafinal\_graphseg\_e120/ckpt/best.pt \\
+kvasir\_seg\_mediafinal\_unet\_e120 & unet\_small & 0.841 & +0.0078 & +0.0000 & 0.0000 & +0.0000 & 0.0000 & 6 & 6 & /users/project1/pt01315/emnlp/grm\_media/runs/binary\_host/kvasir\_seg\_unet\_b32\_s1\_mediafinal\_unet\_e120/ckpt/best.pt \\
+ph2\_mediafinal\_unet\_e120 & unet\_small & 0.908 & +0.0053 & +0.0000 & 0.0000 & +0.0000 & 0.0000 & 6 & 6 & /users/project1/pt01315/emnlp/grm\_media/runs/binary\_host/ph2\_unet\_b32\_s1\_mediafinal\_unet\_e120/ckpt/best.pt \\
+polyps\_official\_mediafinal\_graphseg\_e120 & graphseg & 0.256 & -0.0211 & +0.0000 & 0.0000 & +0.0026 & 0.0000 & 6 & 6 & /users/project1/pt01315/emnlp/grm\_media/runs/binary\_host/polyps\_official\_graphseg\_segformer\_b0\_s1\_mediafinal\_graphseg\_e120/ckpt/best.pt \\
+polyps\_official\_mediafinal\_unet\_e120 & unet\_small & 0.565 & -0.0017 & +0.0037 & 0.0018 & +0.0037 & 0.0018 & 6 & 6 & /users/project1/pt01315/emnlp/grm\_media/runs/binary\_host/polyps\_official\_unet\_b32\_s1\_mediafinal\_unet\_e120/ckpt/best.pt \\
+\bottomrule
+\end{tabular}
+\end{table*}

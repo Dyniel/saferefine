@@ -1,0 +1,14 @@
+\begin{table}[t]
+\centering
+\caption{Detailed standalone-segmenter stress portfolio diagnostics. The candidate is an independently trained UNet used as an alternative action over the GraphSeg host (not a host-conditioned refiner). Utility thresholding ignores the finite-sample UCB feasibility test; SafeRefine primary uses the full harmed-rate, drop$>0.05$, and mean-harm contract.}
+\label{tab:learned_refiner_stress_detail}
+\begin{tabular}{llrrrrrrrr}
+\toprule
+Setting & Split & $n$ & Fixed gain & Fixed harm & Fixed worst & Fixed harmed & Utility gain & Utility worst & Safe reverted \\
+\midrule
+Kvasir / GraphSeg$\rightarrow$UNet & image & 75 & +0.3729 & 0.0007 & -0.0175 & 0.0533 & +0.3729 & -0.0175 & 1.0000 \\
+Polyp ext. / GraphSeg$\rightarrow$UNet & image & 399 & +0.2074 & 0.0405 & -0.6678 & 0.2857 & +0.2009 & -0.6678 & 1.0000 \\
+MSD Heart / GraphSeg$\rightarrow$UNet & patient & 62 & +0.4899 & 0.0049 & -0.3040 & 0.0323 & +0.3924 & -0.3040 & 1.0000 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,37 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Safety-utility trade-off as the calibration harm-rate budget is varied.}
+\label{tab:harm_budget_sweep}
+\begin{tabular}{lllllllll}
+\toprule
+dataset & risk & cal\_harm\_budget & gain & harm & worst\_drop & harmed\_rate & revert\_rate & action \\
+\midrule
+isic2018\_task1 & geom & 0.00 & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+isic2018\_task1 & geom & 0.01 & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+isic2018\_task1 & geom & 0.05 & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+isic2018\_task1 & geom & 0.10 & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+isic2018\_task1 & geom & 0.25 & +0.0117 & 0.0040 & -0.2927 & 0.170 & 0.212 & isic2018\_task1:binary\_morph:a11.00 \\
+kvasir\_seg\_endo\_graphseg\_e120 & geom & 0.00 & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_seg\_endo\_graphseg\_e120 & geom & 0.01 & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_seg\_endo\_graphseg\_e120 & geom & 0.05 & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_seg\_endo\_graphseg\_e120 & geom & 0.10 & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_seg\_endo\_graphseg\_e120 & geom & 0.25 & +0.0095 & 0.0016 & -0.0917 & 0.040 & 0.707 & kvasir\_seg\_endo\_graphseg\_e120:binary\_morph:a5.00 \\
+kvasir\_seg\_endo\_unet\_e120 & geom & 0.00 & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_seg\_endo\_unet\_e120 & geom & 0.01 & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_seg\_endo\_unet\_e120 & geom & 0.05 & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_seg\_endo\_unet\_e120 & geom & 0.10 & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+kvasir\_seg\_endo\_unet\_e120 & geom & 0.25 & +0.0000 & 0.0000 & +0.0000 & 0.040 & 0.907 & kvasir\_seg\_endo\_unet\_e120:binary\_morph:a11.00 \\
+ph2\_unet\_e120 & geom & 0.00 & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+ph2\_unet\_e120 & geom & 0.01 & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+ph2\_unet\_e120 & geom & 0.05 & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+ph2\_unet\_e120 & geom & 0.10 & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+ph2\_unet\_e120 & geom & 0.25 & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+polyps\_official\_endo\_graphseg\_e120 & geom & 0.00 & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+polyps\_official\_endo\_graphseg\_e120 & geom & 0.01 & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+polyps\_official\_endo\_graphseg\_e120 & geom & 0.05 & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+polyps\_official\_endo\_graphseg\_e120 & geom & 0.10 & +0.0000 & 0.0000 & +0.0000 & 0.000 & 1.000 & host \\
+polyps\_official\_endo\_graphseg\_e120 & geom & 0.25 & +0.0000 & 0.0000 & -0.0187 & 0.003 & 0.982 & polyps\_official\_endo\_graphseg\_e120:binary\_morph:a11.00 \\
+\bottomrule
+\end{tabular}
+\end{table*}

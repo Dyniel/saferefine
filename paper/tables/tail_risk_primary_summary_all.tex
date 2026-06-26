@@ -1,0 +1,44 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Tail-risk controlled primary SafeRefine policies across candidate risk scores.}
+\label{tab:tail_risk_primary_all}
+\begin{tabular}{llllllllllll}
+\toprule
+setting & risk\_score & gain & harm & harmed\_rate & drop\_gt\_0.05 & cvar\_harm\_10 & worst\_drop & revert\_rate & cal\_utility & action & split\_group \\
+\midrule
+ISIC / UNet & change\_plus\_geom & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 & +0.0000 & host & image \\
+ISIC / UNet & changed & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 & +0.0000 & host & image \\
+ISIC / UNet & geom & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 & +0.0000 & host & image \\
+ISIC / UNet & host\_uncertainty & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 & +0.0000 & host & image \\
+Kvasir / GraphSeg & change\_plus\_geom & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 & +0.0000 & host & image \\
+Kvasir / GraphSeg & changed & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 & +0.0000 & host & image \\
+Kvasir / GraphSeg & geom & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 & +0.0000 & host & image \\
+Kvasir / GraphSeg & host\_uncertainty & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 & +0.0000 & host & image \\
+Kvasir / UNet & change\_plus\_geom & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 & +0.0000 & host & image \\
+Kvasir / UNet & changed & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 & +0.0000 & host & image \\
+Kvasir / UNet & geom & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 & +0.0000 & host & image \\
+Kvasir / UNet & host\_uncertainty & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 & +0.0000 & host & image \\
+MSD Heart MRI / GraphSeg & change\_plus\_geom & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 & +0.0000 & host & patient \\
+MSD Heart MRI / GraphSeg & changed & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 & +0.0000 & host & patient \\
+MSD Heart MRI / GraphSeg & geom & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 & +0.0000 & host & patient \\
+MSD Heart MRI / GraphSeg & host\_uncertainty & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 & +0.0000 & host & patient \\
+MSD Heart MRI / UNet & change\_plus\_geom & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 & +0.0000 & host & patient \\
+MSD Heart MRI / UNet & changed & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 & +0.0000 & host & patient \\
+MSD Heart MRI / UNet & geom & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 & +0.0000 & host & patient \\
+MSD Heart MRI / UNet & host\_uncertainty & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 & +0.0000 & host & patient \\
+PH2 / UNet & change\_plus\_geom & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 & +0.0000 & host & image \\
+PH2 / UNet & changed & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 & +0.0000 & host & image \\
+PH2 / UNet & geom & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 & +0.0000 & host & image \\
+PH2 / UNet & host\_uncertainty & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 & +0.0000 & host & image \\
+Polyp ext. / GraphSeg & change\_plus\_geom & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 & +0.0000 & host & image \\
+Polyp ext. / GraphSeg & changed & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 & +0.0000 & host & image \\
+Polyp ext. / GraphSeg & geom & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 & +0.0000 & host & image \\
+Polyp ext. / GraphSeg & host\_uncertainty & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 & +0.0000 & host & image \\
+Polyp ext. / UNet & change\_plus\_geom & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 & +0.0000 & host & image \\
+Polyp ext. / UNet & changed & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 & +0.0000 & host & image \\
+Polyp ext. / UNet & geom & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 & +0.0000 & host & image \\
+Polyp ext. / UNet & host\_uncertainty & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.0000 & +0.0000 & 1.000 & +0.0000 & host & image \\
+\bottomrule
+\end{tabular}
+\end{table*}

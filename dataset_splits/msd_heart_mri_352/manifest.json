@@ -1,0 +1,45 @@
+{
+  "img_size": 352,
+  "license": "CC-BY-SA 4.0",
+  "margin_slices": 2,
+  "min_mask_pixels": 16,
+  "modality": "MRI",
+  "n_patients": 20,
+  "n_slices": 1417,
+  "n_test": 222,
+  "n_train": 981,
+  "n_val": 214,
+  "name": "msd_heart_mri",
+  "out_npz": "/users/project1/pt01315/emnlp/grm_media/data_npz/msd_heart_mri_352.npz",
+  "patients_test": [
+    "la_005",
+    "la_009",
+    "la_029"
+  ],
+  "patients_train": [
+    "la_003",
+    "la_004",
+    "la_010",
+    "la_011",
+    "la_017",
+    "la_018",
+    "la_019",
+    "la_020",
+    "la_021",
+    "la_022",
+    "la_023",
+    "la_024",
+    "la_026",
+    "la_030"
+  ],
+  "patients_val": [
+    "la_007",
+    "la_014",
+    "la_016"
+  ],
+  "root": "/users/project1/pt01315/emnlp/grm_media/raw_data/msd/Task02_Heart",
+  "seed": 1,
+  "source": "Medical Segmentation Decathlon Task02 Heart",
+  "split_dir": "/users/project1/pt01315/emnlp/grm_media/dataset_splits/msd_heart_mri_352",
+  "target": "left atrium"
+}

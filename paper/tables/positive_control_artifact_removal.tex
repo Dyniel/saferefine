@@ -1,0 +1,14 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Positive-control artifact-removal experiment. A synthetic host is formed by adding a known isolated square artifact to each ground-truth mask; the candidate refiner removes that artifact. This non-clinical sanity check verifies that SafeRefine certifies a low-risk useful intervention when one exists.}
+\label{tab:positive_control}
+\begin{tabular}{llllllll}
+\toprule
+split & $n$ & gain & harm & harmed & drop05 & worst & max UCB \\
+\midrule
+cal & 4270 & +0.0636 & 0.0000 & 0.000 & 0.000 & +0.0013 & 0.01996 \\
+test & 4270 & +0.0671 & 0.0000 & 0.000 & 0.000 & +0.0013 & 0.01996 \\
+\bottomrule
+\end{tabular}
+\end{table}

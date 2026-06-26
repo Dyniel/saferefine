@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Predefined relaxed SafeRefine protocol selected by calibration utility and evaluated once on the test split.}
+\label{tab:relaxed_saferefine_protocol}
+\begin{tabular}{llllllllllll}
+\toprule
+setting & variant & risk\_score & action & gain & harm & harmed\_rate & drop\_gt\_0.05 & worst\_drop & revert\_rate & oracle\_gain & oracle\_recovery \\
+\midrule
+ISIC / UNet & full & host\_uncertainty & isic2018\_task1\_mediafinal\_unet\_e120\_zoo:prob\_gaussian\_lcc:a2.00 & +0.0021 & 0.0006 & 0.260 & 0.004 & -0.1529 & 0.386 & +0.0114 & 0.186 \\
+Kvasir / GraphSeg & full & change\_plus\_geom & kvasir\_seg\_mediafinal\_graphseg\_e120\_zoo:binary\_morph:a11.00 & -0.0052 & 0.0232 & 0.173 & 0.107 & -0.5852 & 0.427 & +0.0814 & -0.064 \\
+Kvasir / UNet & full & changed & kvasir\_seg\_mediafinal\_unet\_e120\_zoo:binary\_morph:a3.00 & +0.0047 & 0.0005 & 0.200 & 0.000 & -0.0204 & 0.187 & +0.0224 & 0.208 \\
+MSD Heart MRI / GraphSeg & full & host\_uncertainty & msd\_heart\_mri\_mediafinal\_graphseg\_mri\_e120\_zoo:binary\_morph:a11.00 & -0.0004 & 0.0004 & 0.016 & 0.000 & -0.0259 & 0.968 & +0.1237 & -0.003 \\
+MSD Heart MRI / UNet & full & changed & msd\_heart\_mri\_mediafinal\_unet\_mri\_e120\_zoo:close\_only:a11.00 & +0.0003 & 0.0003 & 0.129 & 0.000 & -0.0039 & 0.323 & +0.0484 & 0.007 \\
+PH2 / UNet & full & host\_uncertainty & ph2\_mediafinal\_unet\_e120\_zoo:largest\_cc:a0.00 & -0.0002 & 0.0002 & 0.067 & 0.000 & -0.0029 & 0.667 & +0.0137 & -0.011 \\
+Polyp ext. / GraphSeg & full & geom & polyps\_official\_mediafinal\_graphseg\_e120\_zoo:close\_only:a11.00 & +0.0049 & 0.0012 & 0.218 & 0.000 & -0.0455 & 0.506 & +0.0594 & 0.082 \\
+Polyp ext. / UNet & full & changed & polyps\_official\_mediafinal\_unet\_e120\_zoo:binary\_morph:a11.00 & +0.0021 & 0.0047 & 0.195 & 0.028 & -0.2642 & 0.228 & +0.0282 & 0.074 \\
+\bottomrule
+\end{tabular}
+\end{table*}

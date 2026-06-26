@@ -1,0 +1,10 @@
+# MediaFinal Consistent Results
+
+| run | host_dice | best_fixed_action | best_fixed_gain | best_fixed_harm | best_fixed_worst_drop | crc_gain | crc_harm | crc_worst_drop | crc_revert_rate | crc_action | zoo_crc_gain | zoo_crc_harm | zoo_crc_worst_drop | zoo_crc_revert_rate | zoo_crc_action | strict_exact_fallback | zoo_strict_exact_fallback |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| isic2018_task1_mediafinal_unet_e120 | 0.861 | binary_morph:a11.00 | +0.0026 | 0.0034 | -0.5228 | +0.0000 | 0.0000 | -0.0013 | 0.948 | isic2018_task1_mediafinal_unet_e120:binary_morph:a11.00 | +0.0033 | 0.0015 | -0.1519 | 0.032 | isic2018_task1_mediafinal_unet_e120_zoo:largest_cc:a0.00 | yes | yes |
+| kvasir_seg_mediafinal_graphseg_e120 | 0.488 | binary_morph:a9.00 | +0.0073 | 0.0424 | -0.4294 | +0.0095 | 0.0016 | -0.0919 | 0.707 | kvasir_seg_mediafinal_graphseg_e120:binary_morph:a5.00 | +0.0000 | 0.0000 | +0.0000 | 1.000 | host | yes | yes |
+| kvasir_seg_mediafinal_unet_e120 | 0.841 | binary_morph:a11.00 | +0.0078 | 0.0082 | -0.3400 | +0.0000 | 0.0000 | +0.0000 | 0.907 | kvasir_seg_mediafinal_unet_e120:binary_morph:a11.00 | +0.0000 | 0.0000 | +0.0000 | 1.000 | host | yes | yes |
+| ph2_mediafinal_unet_e120 | 0.908 | binary_morph:a7.00 | +0.0053 | 0.0000 | -0.0087 | +0.0000 | 0.0000 | +0.0000 | 1.000 | host | +0.0000 | 0.0000 | +0.0000 | 1.000 | host | yes | yes |
+| polyps_official_mediafinal_graphseg_e120 | 0.256 | binary_morph:a11.00 | -0.0211 | 0.0524 | -0.5093 | +0.0000 | 0.0000 | +0.0000 | 1.000 | host | +0.0026 | 0.0000 | -0.0455 | 0.717 | polyps_official_mediafinal_graphseg_e120_zoo:close_only:a11.00 | yes | yes |
+| polyps_official_mediafinal_unet_e120 | 0.565 | binary_morph:a9.00 | -0.0017 | 0.0267 | -0.6043 | +0.0037 | 0.0018 | -0.2642 | 0.466 | polyps_official_mediafinal_unet_e120:binary_morph:a9.00 | +0.0037 | 0.0018 | -0.2642 | 0.466 | polyps_official_mediafinal_unet_e120_zoo:binary_morph:a9.00 | yes | yes |

@@ -1,0 +1,52 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Nested Bernoulli certification frontier as the large-drop budget gamma is varied.}
+\label{tab:nested_certification_frontier}
+\begin{tabular}{llllllllllll}
+\toprule
+setting & gamma & risk\_score & certified & action & gain & harm & harmed\_rate & drop\_gt\_0.05 & drop\_gt\_0.20 & worst\_drop & revert\_rate \\
+\midrule
+ISIC / UNet & 0.05 & change\_plus\_geom & no & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+ISIC / UNet & 0.10 & change\_plus\_geom & no & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+ISIC / UNet & 0.15 & geom & yes & isic2018\_task1\_mediafinal\_unet\_e120\_zoo:prob\_gaussian\_lcc:a2.00 & +0.0017 & 0.0007 & 0.006 & 0.004 & 0.000 & -0.1529 & 0.266 \\
+ISIC / UNet & 0.20 & geom & yes & isic2018\_task1\_mediafinal\_unet\_e120\_zoo:prob\_gaussian\_lcc:a2.00 & +0.0017 & 0.0007 & 0.006 & 0.004 & 0.000 & -0.1529 & 0.266 \\
+ISIC / UNet & 0.25 & geom & yes & isic2018\_task1\_mediafinal\_unet\_e120\_zoo:prob\_gaussian\_lcc:a2.00 & +0.0017 & 0.0007 & 0.006 & 0.004 & 0.000 & -0.1529 & 0.266 \\
+Kvasir / GraphSeg & 0.05 & change\_plus\_geom & no & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+Kvasir / GraphSeg & 0.10 & change\_plus\_geom & no & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+Kvasir / GraphSeg & 0.15 & change\_plus\_geom & no & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+Kvasir / GraphSeg & 0.20 & change\_plus\_geom & no & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+Kvasir / GraphSeg & 0.25 & change\_plus\_geom & no & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+Kvasir / UNet & 0.05 & change\_plus\_geom & no & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+Kvasir / UNet & 0.10 & change\_plus\_geom & no & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+Kvasir / UNet & 0.15 & change\_plus\_geom & no & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+Kvasir / UNet & 0.20 & change\_plus\_geom & no & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+Kvasir / UNet & 0.25 & change\_plus\_geom & no & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+MSD Heart MRI / GraphSeg & 0.05 & change\_plus\_geom & no & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+MSD Heart MRI / GraphSeg & 0.10 & change\_plus\_geom & no & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+MSD Heart MRI / GraphSeg & 0.15 & change\_plus\_geom & no & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+MSD Heart MRI / GraphSeg & 0.20 & change\_plus\_geom & no & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+MSD Heart MRI / GraphSeg & 0.25 & host\_uncertainty & yes & msd\_heart\_mri\_mediafinal\_graphseg\_mri\_e120\_zoo:largest\_cc:a0.00 & -0.0004 & 0.0004 & 0.016 & 0.000 & 0.000 & -0.0259 & 0.984 \\
+MSD Heart MRI / UNet & 0.05 & change\_plus\_geom & no & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+MSD Heart MRI / UNet & 0.10 & change\_plus\_geom & no & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+MSD Heart MRI / UNet & 0.15 & change\_plus\_geom & no & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+MSD Heart MRI / UNet & 0.20 & changed & yes & msd\_heart\_mri\_mediafinal\_unet\_mri\_e120\_zoo:close\_only:a9.00 & +0.0000 & 0.0001 & 0.000 & 0.000 & 0.000 & -0.0033 & 0.339 \\
+MSD Heart MRI / UNet & 0.25 & changed & yes & msd\_heart\_mri\_mediafinal\_unet\_mri\_e120\_zoo:close\_only:a9.00 & +0.0000 & 0.0001 & 0.000 & 0.000 & 0.000 & -0.0033 & 0.339 \\
+PH2 / UNet & 0.05 & change\_plus\_geom & no & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+PH2 / UNet & 0.10 & change\_plus\_geom & no & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+PH2 / UNet & 0.15 & change\_plus\_geom & no & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+PH2 / UNet & 0.20 & change\_plus\_geom & no & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+PH2 / UNet & 0.25 & change\_plus\_geom & no & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+Polyp ext. / GraphSeg & 0.05 & change\_plus\_geom & no & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+Polyp ext. / GraphSeg & 0.10 & change\_plus\_geom & no & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+Polyp ext. / GraphSeg & 0.15 & changed & yes & polyps\_official\_mediafinal\_graphseg\_e120\_zoo:close\_only:a11.00 & +0.0064 & 0.0027 & 0.103 & 0.003 & 0.000 & -0.0633 & 0.241 \\
+Polyp ext. / GraphSeg & 0.20 & changed & yes & polyps\_official\_mediafinal\_graphseg\_e120\_zoo:close\_only:a11.00 & +0.0064 & 0.0027 & 0.103 & 0.003 & 0.000 & -0.0633 & 0.241 \\
+Polyp ext. / GraphSeg & 0.25 & changed & yes & polyps\_official\_mediafinal\_graphseg\_e120\_zoo:close\_only:a11.00 & +0.0064 & 0.0027 & 0.103 & 0.003 & 0.000 & -0.0633 & 0.241 \\
+Polyp ext. / UNet & 0.05 & change\_plus\_geom & no & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+Polyp ext. / UNet & 0.10 & change\_plus\_geom & no & host & +0.0000 & 0.0000 & 0.000 & 0.000 & 0.000 & +0.0000 & 1.000 \\
+Polyp ext. / UNet & 0.15 & host\_uncertainty & yes & polyps\_official\_mediafinal\_unet\_e120\_zoo:binary\_morph:a11.00 & +0.0008 & 0.0116 & 0.075 & 0.043 & 0.000 & -0.6043 & 0.236 \\
+Polyp ext. / UNet & 0.20 & change\_plus\_geom & yes & polyps\_official\_mediafinal\_unet\_e120\_zoo:binary\_morph:a11.00 & -0.0023 & 0.0164 & 0.101 & 0.063 & 0.000 & -0.6043 & 0.141 \\
+Polyp ext. / UNet & 0.25 & change\_plus\_geom & yes & polyps\_official\_mediafinal\_unet\_e120\_zoo:binary\_morph:a11.00 & -0.0023 & 0.0164 & 0.101 & 0.063 & 0.000 & -0.6043 & 0.141 \\
+\bottomrule
+\end{tabular}
+\end{table*}

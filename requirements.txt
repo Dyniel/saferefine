@@ -1,0 +1,5 @@
+# Tier 1 (exact CPU-only reproduction of the SafeRefine certification result).
+# These are the only dependencies needed to reproduce every paper table/number
+# from the committed per-image action CSVs in results/refiner_zoo_uncert/.
+numpy>=1.24
+pandas>=2.0

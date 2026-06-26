@@ -1,0 +1,11 @@
+{
+  "img_size": 352,
+  "missing_images_without_masks": 0,
+  "n": 1000,
+  "n_test": 150,
+  "n_train": 700,
+  "n_val": 150,
+  "name": "kvasir_seg_352",
+  "out_npz": "data_npz/kvasir_seg_352.npz",
+  "split_dir": "dataset_splits/kvasir_seg_352"
+}

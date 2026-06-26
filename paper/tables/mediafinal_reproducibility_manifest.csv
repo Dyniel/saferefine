@@ -1,0 +1,7 @@
+run,arch,host_dice,best_fixed_gain,crc_gain,crc_harm,zoo_crc_gain,zoo_crc_harm,policy_json_count,zoo_policy_json_count,checkpoint
+isic2018_task1_mediafinal_unet_e120,unet_small,0.861,+0.0026,+0.0000,0.0000,+0.0033,0.0015,6,6,/users/project1/pt01315/emnlp/grm_media/runs/binary_host/isic2018_task1_unet_b32_s1_mediafinal_unet_e120/ckpt/best.pt
+kvasir_seg_mediafinal_graphseg_e120,graphseg,0.488,+0.0073,+0.0095,0.0016,+0.0000,0.0000,6,6,/users/project1/pt01315/emnlp/grm_media/runs/binary_host/kvasir_seg_graphseg_segformer_b0_s1_mediafinal_graphseg_e120/ckpt/best.pt
+kvasir_seg_mediafinal_unet_e120,unet_small,0.841,+0.0078,+0.0000,0.0000,+0.0000,0.0000,6,6,/users/project1/pt01315/emnlp/grm_media/runs/binary_host/kvasir_seg_unet_b32_s1_mediafinal_unet_e120/ckpt/best.pt
+ph2_mediafinal_unet_e120,unet_small,0.908,+0.0053,+0.0000,0.0000,+0.0000,0.0000,6,6,/users/project1/pt01315/emnlp/grm_media/runs/binary_host/ph2_unet_b32_s1_mediafinal_unet_e120/ckpt/best.pt
+polyps_official_mediafinal_graphseg_e120,graphseg,0.256,-0.0211,+0.0000,0.0000,+0.0026,0.0000,6,6,/users/project1/pt01315/emnlp/grm_media/runs/binary_host/polyps_official_graphseg_segformer_b0_s1_mediafinal_graphseg_e120/ckpt/best.pt
+polyps_official_mediafinal_unet_e120,unet_small,0.565,-0.0017,+0.0037,0.0018,+0.0037,0.0018,6,6,/users/project1/pt01315/emnlp/grm_media/runs/binary_host/polyps_official_unet_b32_s1_mediafinal_unet_e120/ckpt/best.pt
