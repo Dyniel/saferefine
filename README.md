@@ -23,7 +23,7 @@ bound-sensitivity, positive-control, and utility-diagnostic analyses around it.
 
 | Tier | What it reproduces | Needs | Time |
 |------|--------------------|-------|------|
-| **1 — exact, CPU-only** | Every SafeRefine table/number (calibration, tail-risk refusal, frontier, bound sensitivity, decision baselines, standalone-segmenter stress) | `numpy`, `pandas`. No GPU, **no dataset download**. | minutes |
+| **1 — exact, CPU-only** | Every SafeRefine table/number (calibration, tail-risk refusal, frontier, bound sensitivity, decision baselines, standalone-segmenter stress) | `numpy`, `pandas`, `scipy`, `pytest`. No GPU, **no dataset download**. | minutes |
 | **2 — full pipeline** | Regenerates everything from scratch: build datasets → train hosts → evaluate refiners → produce the per-image CSVs that Tier 1 consumes | GPU, the public datasets, `requirements-full.txt` | hours–days |
 
 Tier 1 is possible because the per-image gain/harm/risk metrics for every
@@ -35,7 +35,7 @@ The certification analysis is deterministic post-processing over those CSVs.
 ```bash
 pip install -r requirements.txt
 ./reproduce_cpu.sh          # regenerates all certification tables under results/
-python -m pytest tests/     # fast smoke test of the primary refusal claim
+python -m pytest tests/ -q  # fast smoke test of the primary refusal claim
 ```
 
 See **[REPRODUCE.md](REPRODUCE.md)** for the full step-by-step guide, including
