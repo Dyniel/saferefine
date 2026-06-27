@@ -14,10 +14,13 @@ are committed in [`results/refiner_zoo_uncert/`](results/refiner_zoo_uncert)
 is deterministic post-processing over these CSVs.
 
 ```bash
-pip install -r requirements.txt        # numpy + pandas only
+pip install -r requirements.txt        # numpy + pandas + scipy + pytest
 ./reproduce_cpu.sh                      # ~minutes
 python -m pytest tests/ -q             # smoke test of the primary refusal claim
 ```
+
+`scipy` is included so that the Clopper--Pearson bound-sensitivity analysis uses
+the exact beta-quantile implementation rather than the Hoeffding fallback.
 
 `reproduce_cpu.sh` writes regenerated tables under `results/<suite>/` and prints
 a summary. Compare them against the committed reference tables in
